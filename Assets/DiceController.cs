@@ -3,25 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour
+public class DiceController : MonoBehaviour
 {
     GameObject Dice;
-    int m = 0;
+    public static int d = 0;
     int a = 0;
+    int m = 0;
 
-    private bool moving;
+    bool moving;
 
-    void RandomDice()
+    int RandomDice()
     {
-        this.Dice.GetComponent<Text>().text =  Random.Range(1, 7).ToString();
+        d = Random.Range(1, 7);
+        this.Dice.GetComponent<Text>().text = d.ToString();
+        return d;
     }
-
-    private void DiceStart()
+   
+    void DiceStart()
     {
         moving = true;
     }
 
-    private void DiceStop()
+    void DiceStop()
     {
         moving = false;
     }
@@ -31,10 +34,8 @@ public class PlayerController : MonoBehaviour
         this.Dice = GameObject.Find("Dice");
     }
 
-    void Update()
+    public void DiceRoll()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
             a += 1;
             if ( a%2 == 0)
             {
@@ -44,10 +45,15 @@ public class PlayerController : MonoBehaviour
             {
                 DiceStop();
             }
-        }
+            Input.ResetInputAxes();
+    }
+
+    private void Update()
+    {
         if (moving)
         {
-            RandomDice();
+           RandomDice();
         }
     }
+
 }

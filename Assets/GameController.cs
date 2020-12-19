@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Game2");
     }
 
     // Start is called before the first frame update

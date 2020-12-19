@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
             {
                 d = int.Parse(this.Dice.GetComponent<Text>().text);
                 int currentPlayer = TurnManager.currentPlayer;
-                Debug.Log(currentPlayer);
+                PlayerMovement(d, currentPlayer);
             }
         }
     }

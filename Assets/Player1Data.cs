@@ -8,9 +8,9 @@ public class Player1Data : MonoBehaviour
     public static float x;
     public static float y;
     public static float z;
-    public static float angleTheta;
-    public static float anglePhi;
-    public static int r = 10;
+    public static float angleTheta = 0;
+    public static float anglePhi = 0;
+    public static int r = 5;
 
     public Vector3 GetPositionOnSphere(float angleTheta, float anglePhi, int r)
     {

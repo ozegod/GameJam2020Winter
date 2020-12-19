@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerData : MonoBehaviour
+public class Player1Data : MonoBehaviour
 {
     public static int money;
     public static float x;
@@ -10,9 +10,8 @@ public class PlayerData : MonoBehaviour
     public static float z;
     public static float angleTheta;
     public static float anglePhi;
-}
-public class SpherePosition
-{
+    public static int r = 10;
+
     public Vector3 GetPositionOnSphere(float angleTheta, float anglePhi, int r)
     {
         float x = r * Mathf.Sin(angleTheta) * Mathf.Cos(anglePhi);
@@ -20,5 +19,13 @@ public class SpherePosition
         float z = r * Mathf.Sin(angleTheta) * Mathf.Sin(anglePhi);
         return new Vector3(x, y, z);
     }
+
+    void Update()
+    {
+        GetPositionOnSphere(angleTheta, anglePhi, r);
+    }
 }
+
+
+
 

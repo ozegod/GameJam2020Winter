@@ -8,15 +8,12 @@ public class DiceController : MonoBehaviour
     GameObject Dice;
     public static int d = 0;
     int a = 0;
-    int m = 0;
 
     bool moving;
 
-    int RandomDice()
+    void RandomDice()
     {
-        d = Random.Range(1, 7);
-        this.Dice.GetComponent<Text>().text = d.ToString();
-        return d;
+        this.Dice.GetComponent<Text>().text = Random.Range(1, 7).ToString();
     }
    
     void DiceStart()
@@ -37,7 +34,7 @@ public class DiceController : MonoBehaviour
     public void DiceRoll()
     {
             a += 1;
-            if ( a%2 == 0)
+            if ( a%2 != 0)
             {
                 DiceStart();
             }

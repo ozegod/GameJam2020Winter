@@ -9,11 +9,10 @@ public class Player : MonoBehaviour
     private DiceController diceController;
     private TurnManager turnManager;
     [SerializeField]
-    private Text outputText;
     // 現在自分のターンかどうか
     private bool myTurn;
 
-    int d = 0;
+    public int d = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +34,9 @@ public class Player : MonoBehaviour
         {
             diceController.DiceRoll();
             d = int.Parse(this.Dice.GetComponent<Text>().text);
-            PlayerMovement(d);
+            int currentPlayer = TurnManager.currentPlayer;
+            PlayerMovement(d, currentPlayer);
+                
         }
     }
 
@@ -44,49 +45,60 @@ public class Player : MonoBehaviour
         myTurn = flag;
     }
 
-    void PlayerMovement(int d)
+    void PlayerMovement(int d, int n)
     {
+        float angleTheta = 0;
+        float anglePhi = 0;
+
+        if (n == 0)
+        {
+            angleTheta = Player1Data.angleTheta;
+            anglePhi = Player1Data.anglePhi;
+        }
+        else
+        {
+            angleTheta = Player2Data.angleTheta;
+            anglePhi = Player2Data.anglePhi;
+        }
+
         int step = 0;
-        int x0 = (int)PlayerData.x;
-        int y0 = (int)PlayerData.y;
+        int currentPlayer = TurnManager.currentPlayer;
 
         while (step < d)
         {
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-                PlayerData.x += 1;
-                if (PlayerData.x >= 12)
-                {
-                    PlayerData.x -= 12;
-                }
+                anglePhi += 30f;
             }
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                PlayerData.x -= 1;
-                if (PlayerData.x < 0)
-                {
-                    PlayerData.x += 12;
-                }
+                anglePhi -= 30f;
             }
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                PlayerData.y += 1;
-                if (PlayerData.y >= 12)
-                {
-                    PlayerData.y -= 12;
-                }
+                angleTheta += 30;
             }
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
-                PlayerData.y -= 1;
-                if (PlayerData.y < 12)
-                {
-                    PlayerData.y += 12;
-                }
+                angleTheta -= 30;
             }
-
-            step = Mathf.Abs(x0 - (int)PlayerData.x + y0 - (int)PlayerData.y);
+            PlayerPosition(angleTheta, anglePhi, n);
+            
         }
-        
+
+    }
+
+    void PlayerPosition(float angleTheta, float anglePhi, int n)
+    {
+        if (n == 0)
+        {
+            _ = Player1Data.angleTheta == angleTheta;
+            _ = Player1Data.anglePhi == anglePhi;
+        }
+        else
+        {
+            _ = Player2Data.angleTheta == angleTheta;
+            _ = Player2Data.anglePhi == anglePhi;
+        }
     }
 }

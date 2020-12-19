@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     // 現在自分のターンかどうか
     private bool myTurn;
 
+    public Vector3 Player_pos_possible;
     int d = 0;
 
     // Start is called before the first frame update
@@ -36,6 +37,23 @@ public class Player : MonoBehaviour
             diceController.DiceRoll();
             d = int.Parse(this.Dice.GetComponent<Text>().text);
             PlayerMovement(d);
+        
+        //Playerが行ける場所の計算
+            Transform Player_pos = this.transform;
+        float x = Player_pos.x;
+        float y = Player_pos.y;
+        float z = Player_pos.z;
+        int a ;
+        int b ;
+        while(diceController.d >= Mathf.abs(a))
+        {
+        Mathf.abs(b) = diceController.d - a;
+        Theta1 = a * 30 * Mathf.Deg2Rad;
+        Phi1 = b * 30 * Mathf.Deg2Rad;
+        Player_pos_possible.x = x + r * Mathf.Sin(Theta1) * Math.Cos(Phi1);
+        Player_pos_possible.y = y + r * Mathf.Sin(Theta1);
+        Player_pos_possible.z = z + r * Mathf.Sin(Theta1) * Mathf.Sin(Phi1);
+        Player_pos_possible = Vector3 (Player_pos_possible.x, Player_pos_possible.y, Player_pos_possible.z);
         }
     }
 
@@ -88,5 +106,6 @@ public class Player : MonoBehaviour
             step = Mathf.Abs(x0 - (int)PlayerData.x + y0 - (int)PlayerData.y);
         }
         
+    }
     }
 }

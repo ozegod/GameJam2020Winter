@@ -6,16 +6,19 @@ using UnityEngine.UI;
 public class DiceController : MonoBehaviour
 {
     GameObject Dice;
-    int m = 0;
+    public static int d = 0;
     int a = 0;
+    int m = 0;
 
     bool moving;
 
-    void RandomDice()
+    int RandomDice()
     {
-        this.Dice.GetComponent<Text>().text =  Random.Range(1, 7).ToString();
+        d = Random.Range(1, 7);
+        this.Dice.GetComponent<Text>().text = d.ToString();
+        return d;
     }
-
+   
     void DiceStart()
     {
         moving = true;
@@ -49,7 +52,7 @@ public class DiceController : MonoBehaviour
     {
         if (moving)
         {
-            RandomDice();
+           RandomDice();
         }
     }
 

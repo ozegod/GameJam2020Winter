@@ -19,24 +19,27 @@ public class Player : MonoBehaviour
     {
         // ターンマネジャーを取得
         turnManager = GameObject.Find("TurnManager").GetComponent<TurnManager>();
+        diceController = GameObject.Find("DiceController").GetComponent<DiceController>();
         this.Dice = GameObject.Find("Dice");
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        // 自分のターンでなければなにもしない
         if (!myTurn)
         {
             return;
         }
-        else if (Input.GetKeyDown(KeyCode.Space))
+        else if(Input.GetKeyDown(KeyCode.Space))
         {
             diceController.DiceRoll();
-            d = int.Parse(this.Dice.GetComponent<Text>().text);
-            int currentPlayer = TurnManager.currentPlayer;
-            PlayerMovement(d, currentPlayer);
-                
+            if (diceController.a % 2 == 0)
+            {
+                d = int.Parse(this.Dice.GetComponent<Text>().text);
+                int currentPlayer = TurnManager.currentPlayer;
+                Debug.Log(currentPlayer);
+            }
         }
     }
 
@@ -87,6 +90,8 @@ public class Player : MonoBehaviour
             Dice.GetComponent<Text>().text = (d - step).ToString();
         }
 
+        myTurn = false;
+        turnManager.CountUp();
     }
 
     void PlayerPosition(float angleTheta, float anglePhi, int n)

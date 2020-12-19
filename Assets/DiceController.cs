@@ -7,7 +7,7 @@ public class DiceController : MonoBehaviour
 {
     GameObject Dice;
     public static int d = 0;
-    int a = 0;
+    public int a = 0;
 
     bool moving;
 
@@ -33,16 +33,15 @@ public class DiceController : MonoBehaviour
 
     public void DiceRoll()
     {
-            a += 1;
-            if ( a%2 != 0)
-            {
-                DiceStart();
-            }
-            else
-            {
-                DiceStop();
-            }
-            Input.ResetInputAxes();
+        a += 1;
+        if ( a%2 != 0)
+        {
+            DiceStart();
+        }
+        else
+        {
+            DiceStop();
+        }
     }
 
     private void Update()

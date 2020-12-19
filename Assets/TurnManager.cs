@@ -22,17 +22,17 @@ public class TurnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     // 次のプレイヤーに変更
-    public void CoutnUp()
+    public void CountUp()
     {
         // 現在のプレイヤーのturnフラグをオフにする
         player[currentPlayer].SetMyTurn(false);
         // 次のプレイヤー番号にする
         currentPlayer++;
         // 最後のプレイヤーであれば最初のプレイヤーに戻す
-        if (currentPlayer >= player.Length)
+        if (currentPlayer >= 2)
         {
             currentPlayer = 0;
         }

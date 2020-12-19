@@ -47,9 +47,8 @@ public class Player : MonoBehaviour
 
     void PlayerMovement(int d, int n)
     {
-        float angleTheta = 0;
-        float anglePhi = 0;
-
+        float angleTheta;
+        float anglePhi;
         if (n == 0)
         {
             angleTheta = Player1Data.angleTheta;
@@ -62,9 +61,10 @@ public class Player : MonoBehaviour
         }
 
         int step = 0;
-        int currentPlayer = TurnManager.currentPlayer;
+        float angleTheta0 = angleTheta;
+        float anglePhi0 = anglePhi;
 
-        while (step < d)
+        while (step < d*30)
         {
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
@@ -83,7 +83,8 @@ public class Player : MonoBehaviour
                 angleTheta -= 30;
             }
             PlayerPosition(angleTheta, anglePhi, n);
-            
+            step = (int)Mathf.Abs(angleTheta0 - angleTheta + anglePhi0 - anglePhi);
+            Dice.GetComponent<Text>().text = (d - step).ToString();
         }
 
     }

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    GameObject Dice;
     private DiceController diceController;
     private TurnManager turnManager;
     [SerializeField]
@@ -12,11 +13,14 @@ public class Player : MonoBehaviour
     // 現在自分のターンかどうか
     private bool myTurn;
 
+    int d = 0;
+
     // Start is called before the first frame update
     void Start()
     {
         // ターンマネジャーを取得
         turnManager = GameObject.Find("TurnManager").GetComponent<TurnManager>();
+        this.Dice = GameObject.Find("Dice");
     }
 
     // Update is called once per frame
@@ -30,7 +34,8 @@ public class Player : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Space))
         {
             diceController.DiceRoll();
-            PlayerMovement(DiceController.d);
+            d = int.Parse(this.Dice.GetComponent<Text>().text);
+            PlayerMovement(d);
         }
     }
 

@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{66E12BAA-63BE-25E1-F601-9ABDF527CDC4}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/TurnManager.cs">
+    <Files>
+      <File FileName="Assets/Player.cs" Line="50" Column="43" />
+      <File FileName="Assets/GameController.cs" Line="1" Column="1" />
+      <File FileName="Assets/TurnManager.cs" Line="21" Column="39" />
+      <File FileName="Assets/DiceController.cs" Line="43" Column="24" />
+      <File FileName="Assets/CameraController.cs" />
+      <File FileName="Assets/Player1Data.cs" Line="27" Column="23" />
+      <File FileName="Assets/Player2Data.cs" Line="19" Column="66" />
+      <File FileName="Assets/LightController.cs" />
+      <File FileName="Assets/Playermove.cs" Line="126" Column="53" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="名称未設定フォルダ2" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="TurnManager.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7c4419e2-cf2e-4d9b-b9e7-4a2c50baf63d" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

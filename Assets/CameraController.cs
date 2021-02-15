@@ -21,6 +21,8 @@ public class CameraController : MonoBehaviour
         {
             camera1.enabled = true;
             camera2.enabled = false;
+            Vector3 campos1 = camera1.transform.position;
+            campos1 = new Vector3(0, 1, -4);
         }
         // Call this function to enable FPS camera,
         // and disable overhead camera.
@@ -28,6 +30,8 @@ public class CameraController : MonoBehaviour
         {
             camera1.enabled = false;
             camera2.enabled = true;
+            Vector3 campos2 = camera2.transform.position;
+            campos2 = new Vector3(0, 1, -4);
         }
     }
 }

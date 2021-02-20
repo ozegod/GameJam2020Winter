@@ -11,26 +11,30 @@ public class Player2Data : MonoBehaviour
     public static float angleTheta;
     public static float anglePhi;
     public static int r = 5;
+    GameObject player2;
 
     public Vector3 GetPositionOnSphere(float angleTheta, float anglePhi, int r)
     {
-        float x = r * Mathf.Sin(angleTheta) * Mathf.Cos(anglePhi);
-        float y = r * Mathf.Cos(angleTheta);
-        float z = r * Mathf.Sin(angleTheta) * Mathf.Sin(anglePhi);
+        float x = r * Mathf.Sin(angleTheta * 2 * Mathf.PI / 360) * Mathf.Cos(anglePhi * 2 * Mathf.PI / 360);
+        float y = r * Mathf.Cos(angleTheta * 2 * Mathf.PI / 360);
+        float z = r * Mathf.Sin(angleTheta * 2 * Mathf.PI / 360) * Mathf.Sin(anglePhi * 2 * Mathf.PI / 360);
         return new Vector3(x, y, z);
     }
 
     private void Start()
     {
-        Vector3 firstposition = GetPositionOnSphere(180f, 0f, 5);
-        transform.rotation = Quaternion.Euler(0, 0, 180);
-        transform.position = firstposition;
+        angleTheta = 180f;
+        anglePhi = 0f;
+        player2 = GameObject.Find("Player2");
+        Vector3 firstposition = GetPositionOnSphere(angleTheta, anglePhi, 5);
+        player2.transform.rotation = Quaternion.Euler(180f, 0f, 0f);
+        player2.transform.position = firstposition;
     }
 
     void Update()
     {
-        GetPositionOnSphere(angleTheta, anglePhi, r);
-        transform.rotation = Quaternion.Euler(0, 0, angleTheta);
+        player2.transform.position=GetPositionOnSphere(angleTheta, anglePhi, r);
+        player2.transform.rotation = Quaternion.Euler(0, 0, angleTheta);
     }
 }
 

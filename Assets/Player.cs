@@ -9,13 +9,11 @@ public class Player : MonoBehaviour
     private DiceController diceController;
     private TurnManager turnManager;
     [SerializeField]
-    private Text outputText;
     // 現在自分のターンかどうか
     private bool myTurn;
 
-    public Vector3 Player_pos_possible;
-    int d = 0;
 
+    public int d = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,23 +35,6 @@ public class Player : MonoBehaviour
             diceController.DiceRoll();
             d = int.Parse(this.Dice.GetComponent<Text>().text);
             PlayerMovement(d);
-        
-        //Playerが行ける場所の計算
-            Transform Player_pos = this.transform;
-        float x = Player_pos.x;
-        float y = Player_pos.y;
-        float z = Player_pos.z;
-        int a ;
-        int b ;
-        while(diceController.d >= Mathf.abs(a))
-        {
-        Mathf.abs(b) = diceController.d - a;
-        Theta1 = a * 30 * Mathf.Deg2Rad;
-        Phi1 = b * 30 * Mathf.Deg2Rad;
-        Player_pos_possible.x = x + r * Mathf.Sin(Theta1) * Math.Cos(Phi1);
-        Player_pos_possible.y = y + r * Mathf.Sin(Theta1);
-        Player_pos_possible.z = z + r * Mathf.Sin(Theta1) * Mathf.Sin(Phi1);
-        Player_pos_possible = Vector3 (Player_pos_possible.x, Player_pos_possible.y, Player_pos_possible.z);
         }
     }
 
@@ -62,50 +43,62 @@ public class Player : MonoBehaviour
         myTurn = flag;
     }
 
-    void PlayerMovement(int d)
+    void PlayerMovement(int d, int n)
     {
-        int step = 0;
-        int x0 = (int)PlayerData.x;
-        int y0 = (int)PlayerData.y;
+        float angleTheta;
+        float anglePhi;
+        if (n == 0)
+        {
+            angleTheta = Player1Data.angleTheta;
+            anglePhi = Player1Data.anglePhi;
+        }
+        else
+        {
+            angleTheta = Player2Data.angleTheta;
+            anglePhi = Player2Data.anglePhi;
+        }
 
-        while (step < d)
+        int step = 0;
+        float angleTheta0 = angleTheta;
+        float anglePhi0 = anglePhi;
+
+        while (step < d*30)
         {
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-                PlayerData.x += 1;
-                if (PlayerData.x >= 12)
-                {
-                    PlayerData.x -= 12;
-                }
+                anglePhi += 30f;
             }
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                PlayerData.x -= 1;
-                if (PlayerData.x < 0)
-                {
-                    PlayerData.x += 12;
-                }
+                anglePhi -= 30f;
             }
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                PlayerData.y += 1;
-                if (PlayerData.y >= 12)
-                {
-                    PlayerData.y -= 12;
-                }
+                angleTheta += 30;
             }
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
-                PlayerData.y -= 1;
-                if (PlayerData.y < 12)
-                {
-                    PlayerData.y += 12;
-                }
+                angleTheta -= 30;
             }
-
-            step = Mathf.Abs(x0 - (int)PlayerData.x + y0 - (int)PlayerData.y);
+            PlayerPosition(angleTheta, anglePhi, n);
+            step = (int)Mathf.Abs(angleTheta0 - angleTheta + anglePhi0 - anglePhi);
+            Dice.GetComponent<Text>().text = (d - step).ToString();
         }
-        
+
     }
+
+    void PlayerPosition(float angleTheta, float anglePhi, int n)
+    {
+        if (n == 0)
+        {
+            _ = Player1Data.angleTheta == angleTheta;
+            _ = Player1Data.anglePhi == anglePhi;
+        }
+        else
+        {
+            _ = Player2Data.angleTheta == angleTheta;
+            _ = Player2Data.anglePhi == anglePhi;
+        }
     }
+    
 }

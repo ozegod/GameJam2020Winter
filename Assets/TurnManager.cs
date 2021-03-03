@@ -7,8 +7,9 @@ public class TurnManager : MonoBehaviour
     // 全プレイヤー
     [SerializeField]
     private Player[] player;
+
     // 現在のプレイヤー番号
-    private int currentPlayer;
+    public static int currentPlayer;
 
 
     // Start is called before the first frame update
@@ -21,7 +22,7 @@ public class TurnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
     // 次のプレイヤーに変更
     public void CoutnUp()

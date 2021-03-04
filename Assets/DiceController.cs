@@ -7,11 +7,11 @@ public class DiceController : MonoBehaviour
 {
     GameObject Dice;
     public static int d = 0;
-    int a = 0;
+    public int a = 0;
 
     bool moving;
 
-    void RandomDice()
+     public void RandomDice()
     {
         this.Dice.GetComponent<Text>().text = Random.Range(1, 7).ToString();
     }
@@ -33,17 +33,17 @@ public class DiceController : MonoBehaviour
 
     public void DiceRoll()
     {
-            a += 1;
-            if ( a%2 != 0)
-            {
-                DiceStart();
-            }
-            else
-            {
-                DiceStop();
-            }
-            Input.ResetInputAxes();
+        //a++;
+        if (a % 3 == 1)
+        {
+            DiceStart();
+        }
+        else
+        {
+            DiceStop();
+        }
     }
+
 
     private void Update()
     {

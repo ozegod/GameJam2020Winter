@@ -12,29 +12,66 @@ public class Player : MonoBehaviour
     // 現在自分のターンかどうか
     private bool myTurn;
 
-
+    public static int D = 0;
+    public int h = 0;
     public int d = 0;
     // Start is called before the first frame update
     void Start()
     {
         // ターンマネジャーを取得
         turnManager = GameObject.Find("TurnManager").GetComponent<TurnManager>();
+        diceController = GameObject.Find("DiceController").GetComponent<DiceController>();
         this.Dice = GameObject.Find("Dice");
+    
     }
 
     // Update is called once per frame
     void Update()
     {
-        // 自分のターンでなければなにもしない
+            
         if (!myTurn)
         {
             return;
         }
-        else if (Input.GetKeyDown(KeyCode.Space))
+        else
         {
-            diceController.DiceRoll();
-            d = int.Parse(this.Dice.GetComponent<Text>().text);
-            PlayerMovement(d);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                diceController.a++;
+                //if (diceController.a % 6 == 2)
+                {
+                    //diceController.a++;
+                }
+
+                diceController.DiceRoll();
+            }
+
+            D = int.Parse(this.Dice.GetComponent<Text>().text);
+            if (diceController.a % 3 == 2)
+            {
+                if (D > 0)
+                {
+                    D = int.Parse(this.Dice.GetComponent<Text>().text);
+                    Playermove.MoveStart();
+                }
+                else
+                {
+                    Playermove.MoveStop();
+                }             
+            }
+
+            if ((diceController.a % 3 == 0) && (diceController.a > 0))
+            {
+                turnManager.CountUp();
+                //Playermove.u = 0;
+            }
+        //}
+        }
+
+        //スペースキー押された回数をとりあえずカウント
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            h++;
         }
     }
 
@@ -43,62 +80,5 @@ public class Player : MonoBehaviour
         myTurn = flag;
     }
 
-    void PlayerMovement(int d, int n)
-    {
-        float angleTheta;
-        float anglePhi;
-        if (n == 0)
-        {
-            angleTheta = Player1Data.angleTheta;
-            anglePhi = Player1Data.anglePhi;
-        }
-        else
-        {
-            angleTheta = Player2Data.angleTheta;
-            anglePhi = Player2Data.anglePhi;
-        }
 
-        int step = 0;
-        float angleTheta0 = angleTheta;
-        float anglePhi0 = anglePhi;
-
-        while (step < d*30)
-        {
-            if (Input.GetKeyDown(KeyCode.RightArrow))
-            {
-                anglePhi += 30f;
-            }
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
-            {
-                anglePhi -= 30f;
-            }
-            if (Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                angleTheta += 30;
-            }
-            if (Input.GetKeyDown(KeyCode.DownArrow))
-            {
-                angleTheta -= 30;
-            }
-            PlayerPosition(angleTheta, anglePhi, n);
-            step = (int)Mathf.Abs(angleTheta0 - angleTheta + anglePhi0 - anglePhi);
-            Dice.GetComponent<Text>().text = (d - step).ToString();
-        }
-
-    }
-
-    void PlayerPosition(float angleTheta, float anglePhi, int n)
-    {
-        if (n == 0)
-        {
-            _ = Player1Data.angleTheta == angleTheta;
-            _ = Player1Data.anglePhi == anglePhi;
-        }
-        else
-        {
-            _ = Player2Data.angleTheta == angleTheta;
-            _ = Player2Data.anglePhi == anglePhi;
-        }
-    }
-    
 }

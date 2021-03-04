@@ -10,42 +10,32 @@ public class Player1Data : MonoBehaviour
     public static float z;
     public static float angleTheta;
     public static float anglePhi;
-    public static int r = 10;
+    public static int r = 5;
+    GameObject player1;
 
     public Vector3 Player1_pos_possible;
     public Vector3 GetPositionOnSphere(float angleTheta, float anglePhi, int r)
     {
-        float x = r * Mathf.Sin(angleTheta) * Mathf.Cos(anglePhi);
-        float y = r * Mathf.Cos(angleTheta);
-        float z = r * Mathf.Sin(angleTheta) * Mathf.Sin(anglePhi);
+        float x = r * Mathf.Sin(angleTheta * 2 * Mathf.PI / 360) * Mathf.Cos(anglePhi * 2 * Mathf.PI / 360);
+        float y = r * Mathf.Cos(angleTheta * 2 * Mathf.PI / 360);
+        float z = r * Mathf.Sin(angleTheta * 2 * Mathf.PI / 360) * Mathf.Sin(anglePhi * 2 * Mathf.PI / 360);
         return new Vector3(x, y, z);
+    }
+
+    private void Start()
+    {
+        angleTheta = 0f;
+        anglePhi = 0f;
+        player1 = GameObject.Find("Player1");
+        Vector3 firstposition = GetPositionOnSphere(angleTheta, anglePhi, 5);
+        player1.transform.position = firstposition;
     }
 
     void Update()
     {
-        GetPositionOnSphere(angleTheta, anglePhi, r);
-
-        //Playerが行ける場所の計算
-            Transform Player1_pos = this.transform;
-        float x = Player1_pos.x;
-        float y = Player1_pos.y;
-        float z = Player1_pos.z;
-        int a ;
-        int b ;
-        while(diceController.d >= Mathf.abs(a))
-        {
-        Mathf.abs(b) = diceController.d - a;
-        Theta1 = a * 30 * Mathf.Deg2Rad;
-        Phi1 = b * 30 * Mathf.Deg2Rad;
-        Player1_pos_possible.x = x + r * Mathf.Sin(Theta1) * Math.Cos(Phi1);
-        Player1_pos_possible.y = y + r * Mathf.Sin(Theta1);
-        Player1_pos_possible.z = z + r * Mathf.Sin(Theta1) * Mathf.Sin(Phi1);
-        Player1_pos_possible = Vector3 (Player_pos_possible.x, Player_pos_possible.y, Player_pos_possible.z);
-
-            int currentPlayer = TurnManager.currentPlayer;
-            PlayerMovement(d, currentPlayer);
+        player1.transform.position=GetPositionOnSphere(angleTheta, anglePhi, r);
+        player1.transform.rotation = Quaternion.Euler(0, 0, angleTheta);
     }
-}
 }
 
 

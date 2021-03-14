@@ -32,7 +32,7 @@ public class TurnManager : MonoBehaviour
         // 次のプレイヤー番号にする
         currentPlayer++;
         // 最後のプレイヤーであれば最初のプレイヤーに戻す
-        if (currentPlayer >= 2)
+        if (currentPlayer >= 1)
         {
             currentPlayer = 0;
         }

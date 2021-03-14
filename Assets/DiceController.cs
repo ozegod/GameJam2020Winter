@@ -13,7 +13,7 @@ public class DiceController : MonoBehaviour
 
     void RandomDice()
     {
-        this.Dice.GetComponent<Text>().text = Random.Range(1, 7).ToString();
+        Dice.GetComponent<Text>().text = Random.Range(1, 7).ToString();
     }
    
     void DiceStart()
@@ -34,7 +34,7 @@ public class DiceController : MonoBehaviour
     public void DiceRoll()
     {
         a += 1;
-        if ( a%2 != 0)
+        if ( a%2 == 1)
         {
             DiceStart();
         }
@@ -48,7 +48,10 @@ public class DiceController : MonoBehaviour
     {
         if (moving)
         {
-           RandomDice();
+            if (TimeManager.t >= 0)
+            {
+                RandomDice();
+            }
         }
     }
 

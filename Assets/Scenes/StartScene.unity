@@ -701,7 +701,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1987180477}
-        m_MethodName: StartGame
+        m_MethodName: OnClick_playButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -759,7 +759,7 @@ GameObject:
   - component: {fileID: 1987180476}
   - component: {fileID: 1987180477}
   m_Layer: 0
-  m_Name: GameController
+  m_Name: GameConnect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -788,6 +788,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1987180475}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a347478c4ff54819a17a46326acda46, type: 3}
+  m_Script: {fileID: 11500000, guid: 85bc9ac85923c4890b72907f5f55f94a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playButton: {fileID: 1814633572}

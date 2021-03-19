@@ -16,9 +16,9 @@ public class Player1Data : MonoBehaviour
     public Vector3 Player1_pos_possible;
     public Vector3 GetPositionOnSphere(float angleTheta, float anglePhi, int r)
     {
-        float x = r * Mathf.Sin(angleTheta * 2 * Mathf.PI / 360) * Mathf.Cos(anglePhi * 2 * Mathf.PI / 360);
-        float y = r * Mathf.Cos(angleTheta * 2 * Mathf.PI / 360);
-        float z = r * Mathf.Sin(angleTheta * 2 * Mathf.PI / 360) * Mathf.Sin(anglePhi * 2 * Mathf.PI / 360);
+        float x = r * Mathf.Sin(angleTheta * Mathf.Deg2Rad) * Mathf.Cos(anglePhi * Mathf.Deg2Rad);
+        float y = r * Mathf.Cos(angleTheta * Mathf.Deg2Rad);
+        float z = r * Mathf.Sin(angleTheta * Mathf.Deg2Rad) * Mathf.Sin(anglePhi * Mathf.Deg2Rad);
         return new Vector3(x, y, z);
     }
 
@@ -33,7 +33,7 @@ public class Player1Data : MonoBehaviour
 
     void Update()
     {
-        player1.transform.position=GetPositionOnSphere(angleTheta, anglePhi, r);
+        player1.transform.position = GetPositionOnSphere(angleTheta, anglePhi, r);
         player1.transform.rotation = Quaternion.Euler(0, 0, angleTheta);
     }
 }

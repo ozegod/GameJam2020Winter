@@ -3,6 +3,8 @@ using Photon.Pun.UtilityScripts;
 
 public class TurnManager : MonoBehaviourPunCallbacks, IPunTurnManagerCallbacks
 {
+    public PlayerData player;
+    int playerid;
     private PunTurnManager turnManager;
 
     public void Awake()
@@ -22,10 +24,10 @@ public class TurnManager : MonoBehaviourPunCallbacks, IPunTurnManagerCallbacks
     }
 
     // プレイヤーがターン終了したとき
-    public void OnPlayerFinished(Player photonPlayer, int turn, object move) { }
+    public void OnPlayerFinished(PlayerData player, int turn, object move) { }
 
     // 動作したとき
-    public void OnPlayerMove(Player photonPlayer, int turn, object move) { }
+    public void OnPlayerMove(PlayerData player, int turn, object move) { }
 
     // ターン開始
     public void OnTurnBegins(int turn)

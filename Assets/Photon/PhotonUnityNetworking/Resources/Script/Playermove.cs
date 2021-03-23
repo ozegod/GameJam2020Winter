@@ -9,7 +9,7 @@ public class Playermove : MonoBehaviour
     DiceController diceController;
     [SerializeField]
     bool Moving;
-    public Player player;
+    public PlayerData player;
     public int u;
     public int step;
 

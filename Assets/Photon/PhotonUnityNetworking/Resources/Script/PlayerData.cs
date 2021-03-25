@@ -14,7 +14,7 @@ public class PlayerData : MonoBehaviour
 
     GameObject Dice;
     DiceController diceController;
-    public Playermove playermove;
+    public PlayerMove playermove;
     [SerializeField]
     // 現在自分のターンかどうか
     private bool myTurn;
@@ -41,7 +41,6 @@ public class PlayerData : MonoBehaviour
     void Update()
     {
         this.transform.position = GetPositionOnSphere(angleTheta, anglePhi, r);
-        this.transform.rotation = Quaternion.Euler(0, 0, angleTheta);
 
         if (!myTurn)
         {

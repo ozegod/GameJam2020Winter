@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Playermove : MonoBehaviour
+public class PlayerMove : MonoBehaviour
 {
     Text Dice;
     DiceController diceController;
@@ -33,13 +33,11 @@ public class Playermove : MonoBehaviour
 
     public void MoveStart()
     {
-        Debug.Log("true");
         Moving = true;
     }
 
     public void MoveStop()
     {
-        Debug.Log("false");
         Moving = false;
     }
 

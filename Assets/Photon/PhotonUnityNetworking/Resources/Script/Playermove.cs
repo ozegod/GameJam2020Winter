@@ -69,19 +69,19 @@ public class Playermove : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            anglePhi += 10f;
+            angleTheta += 10f;
         }
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            anglePhi -= 10f;
+            angleTheta -= 10f;
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            angleTheta += 10f;
+            anglePhi += 10f;
         }
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            angleTheta -= 10f;
+            anglePhi -= 10f;
         }
         PlayerPosition(angleTheta, anglePhi);
         step = (int)Mathf.Abs(angleTheta0 - angleTheta) + (int)Mathf.Abs(anglePhi0 - anglePhi);

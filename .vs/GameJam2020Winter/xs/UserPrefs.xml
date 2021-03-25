@@ -1,16 +1,15 @@
 ﻿<Properties StartupConfiguration="{8FC2A022-14F0-C3C0-455B-6CF8272569AC}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Photon/PhotonUnityNetworking/Resources/Script/TurnManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Photon/PhotonUnityNetworking/Resources/Script/Leaderboard.cs">
     <Files>
-      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/TurnManager.cs" Line="7" Column="15" />
-      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/Playermove.cs" Line="78" Column="47" />
-      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/GameConnect.cs" Line="15" Column="38" />
-      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/Player.cs" Line="19" Column="5" />
-      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/DiceController.cs" Line="45" Column="1" />
+      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/Leaderboard.cs" Line="11" Column="25" />
+      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/Playermove.cs" />
+      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerData.cs" />
+      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/GravityAttractor.cs" Line="18" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d31e8c11-fe48-4930-8e12-3f2a920263ed" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="699d41ac-2b6f-46f5-aaa4-25b33d25a541" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

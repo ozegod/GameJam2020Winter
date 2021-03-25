@@ -3,11 +3,12 @@ using System.Text;
 using Photon.Pun;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Leaderboard : MonoBehaviour
 {
     [SerializeField]
-    private TextMeshProUGUI label = default;
+    private Text label = default;
 
     private StringBuilder builder;
     private float elapsedTime;
@@ -52,7 +53,7 @@ public class Leaderboard : MonoBehaviour
         builder.Clear();
         foreach (var player in players)
         {
-            builder.AppendLine($"{player.NickName}({player.ActorNumber}) - {player.GetMoney()}");
+            builder.AppendLine($"{player.NickName} - {player.GetMoney()}");
         }
         label.text = builder.ToString();
     }

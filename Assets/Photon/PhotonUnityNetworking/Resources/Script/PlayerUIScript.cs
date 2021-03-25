@@ -2,23 +2,34 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class CPlayerUIScript : MonoBehaviour
+public class PlayerUIScript : MonoBehaviour
 {
     #region Public Properties
 
     //プレイヤー名前設定用Text
     public Text PlayerNameText;
 
+    //プレイヤーのmoney用Slider
+    public Slider PlayermoneySlider;
+
     #endregion
 
     #region Private Properties
     //追従するキャラのPlayerManager情報
-    public CPlayerManager _target;
+    public PlayerManager _target;
 
     Vector3 _targetPosition;
     #endregion
 
     #region MonoBehaviour Messages
+    void Update()
+    {
+        // 現在のmoneyをSliderに適用
+        if (PlayermoneySlider != null)
+        {
+            PlayermoneySlider.value = _target.money;
+        }
+    }
     void LateUpdate()
     {
         //　カメラと同じ向きに設定
@@ -27,7 +38,7 @@ public class CPlayerUIScript : MonoBehaviour
     #endregion
 
     #region Public Methods
-    public void SetTarget(CPlayerManager target)
+    public void SetTarget(PlayerManager target)
     {
         if (target == null)//targetがいなければエラーをConsoleに表示
         {
@@ -40,6 +51,10 @@ public class CPlayerUIScript : MonoBehaviour
         if (PlayerNameText != null)
         {
             PlayerNameText.text = _target.photonView.Owner.NickName;
+        }
+        if (PlayermoneySlider != null)
+        {
+            PlayermoneySlider.value = _target.money;
         }
     }
     #endregion

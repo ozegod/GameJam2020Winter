@@ -1,5 +1,6 @@
 ﻿using Photon.Pun;
 using Photon.Pun.UtilityScripts;
+using Photon.Realtime;
 
 public class TurnManager : MonoBehaviourPunCallbacks, IPunTurnManagerCallbacks
 {
@@ -23,12 +24,6 @@ public class TurnManager : MonoBehaviourPunCallbacks, IPunTurnManagerCallbacks
         }
     }
 
-    // プレイヤーがターン終了したとき
-    public void OnPlayerFinished(PlayerData player, int turn, object move) { }
-
-    // 動作したとき
-    public void OnPlayerMove(PlayerData player, int turn, object move) { }
-
     // ターン開始
     public void OnTurnBegins(int turn)
     {
@@ -45,9 +40,6 @@ public class TurnManager : MonoBehaviourPunCallbacks, IPunTurnManagerCallbacks
         }
     }
 
-    // タイマー終了
-    public void OnTurnTimeEnds(int turn) { }
-
     // 攻撃ターンを終了させる
     // 「こうげき」ボタンをクリックしたときに呼びます。
     public void AttackTurnEnd()
@@ -55,12 +47,17 @@ public class TurnManager : MonoBehaviourPunCallbacks, IPunTurnManagerCallbacks
         this.turnManager.SendMove(1, true);
     }
 
-    public void OnPlayerMove(Photon.Realtime.Player player, int turn, object move)
+    public void OnPlayerMove(Player player, int turn, object move)
     {
         throw new System.NotImplementedException();
     }
 
-    public void OnPlayerFinished(Photon.Realtime.Player player, int turn, object move)
+    public void OnPlayerFinished(Player player, int turn, object move)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void OnTurnTimeEnds(int turn)
     {
         throw new System.NotImplementedException();
     }

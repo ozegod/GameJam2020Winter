@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class PlayerData : MonoBehaviour
 {
-    public int money;
     public float x;
     public float y;
     public float z;
@@ -24,9 +23,9 @@ public class PlayerData : MonoBehaviour
 
     public Vector3 GetPositionOnSphere(float angleTheta, float anglePhi, int r)
     {
-        float x = r * Mathf.Sin(angleTheta * 2 * Mathf.PI / 360) * Mathf.Cos(anglePhi * 2 * Mathf.PI / 360);
-        float y = r * Mathf.Cos(angleTheta * 2 * Mathf.PI / 360);
-        float z = r * Mathf.Sin(angleTheta * 2 * Mathf.PI / 360) * Mathf.Sin(anglePhi * 2 * Mathf.PI / 360);
+        x = r * Mathf.Sin(angleTheta * 2 * Mathf.PI / 360) * Mathf.Cos(anglePhi * 2 * Mathf.PI / 360);
+        y = r * Mathf.Cos(angleTheta * 2 * Mathf.PI / 360);
+        z = r * Mathf.Sin(angleTheta * 2 * Mathf.PI / 360) * Mathf.Sin(anglePhi * 2 * Mathf.PI / 360);
         return new Vector3(x, y, z);
     }
 
@@ -83,11 +82,5 @@ public class PlayerData : MonoBehaviour
             countspace++;
         }
     }
-
-    public void SetMyTurn(bool flag)
-    {
-        myTurn = flag;
-    }
-
 
 }

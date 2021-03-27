@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GravityAttractor : MonoBehaviour
 {
+    public GameObject[] Objects;
 
     public float gravity = -10f;
 
@@ -13,7 +14,7 @@ public class GravityAttractor : MonoBehaviour
         Vector3 bodyUp = body.up;
 
         body.rotation = Quaternion.FromToRotation(bodyUp, targetDir) * body.rotation;
-        GameObject.Find("Player1").GetComponent<Rigidbody>().AddForce(targetDir * gravity);
+        GameObject.FindGameObjectWithTag("objects").GetComponent<Rigidbody>().AddForce(targetDir * gravity);
     }
 
 }

@@ -20,6 +20,8 @@ public class FirstPersonController : MonoBehaviour
     Vector3 moveAmount;
     Vector3 smoothMoveVelocity;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +39,9 @@ public class FirstPersonController : MonoBehaviour
         Vector3 moveDir = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized;
         Vector3 targetMoveAmount = moveDir * walkSpeed;
         moveAmount = Vector3.SmoothDamp(moveAmount,targetMoveAmount, ref smoothMoveVelocity, .15f);
+
     }
+      
 
     void FixedUpdate()
     {

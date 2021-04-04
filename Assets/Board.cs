@@ -12,7 +12,7 @@ public class BoardSystem : MonoBehaviour
     {
         float angleTheta = 0, anglePhi = 0;
         //球の半径（1）
-        int r = 1;
+        float r = 5f;
 
         float x = r * Mathf.Sin(angleTheta) * Mathf.Cos(anglePhi);
         float y = r * Mathf.Cos(angleTheta);
@@ -26,7 +26,7 @@ public class BoardSystem : MonoBehaviour
     void Update(float angleTheta,float anglePhi)
     {
         //球の半径（1）
-        int r = 1;
+        float r = 5f;
 
         float x = r * Mathf.Sin(angleTheta) * Mathf.Cos(anglePhi);
         float y = r * Mathf.Cos(angleTheta);
@@ -34,6 +34,11 @@ public class BoardSystem : MonoBehaviour
 
         //空間座標の位置
         Vector3 Player_coordinate= new Vector3(x, y, z);
+
+        if(angleTheta%30 == 0 && anglePhi % 30 == 0)
+        {
+            Debug.Log("score + 1");
+        }
     }
 
 }

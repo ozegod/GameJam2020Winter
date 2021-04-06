@@ -8,6 +8,7 @@ public class GameConnect : MonoBehaviourPunCallbacks
 {
     #region Public変数定義
 
+    public OVRScreenFade fade;
     //Public変数の定義はココで
 
     #endregion
@@ -41,8 +42,8 @@ public class GameConnect : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         Debug.Log("ルームに入りました。");
-        //battleシーンをロード
-        PhotonNetwork.LoadLevel("Game2");
+        fade.FadeOut();
+        SceneManager.LoadLevel("Game2");
     }
 
     #endregion

@@ -43,7 +43,7 @@ public class PlayerMove : MonoBehaviour
 
     public void Movemove()
     {
-        if ((Input.GetKeyDown(KeyCode.RightArrow)) || (Input.GetKeyDown(KeyCode.LeftArrow)) || (Input.GetKeyDown(KeyCode.UpArrow)) || (Input.GetKeyDown(KeyCode.DownArrow)))
+        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickRight) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickRight) || OVRInput.GetDown(OVRInput.RawButton.LThumbstickLeft) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickLeft) || OVRInput.GetDown(OVRInput.RawButton.LThumbstickUp) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickUp) || OVRInput.GetDown(OVRInput.RawButton.LThumbstickDown) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickDown))
         {
             MoveStart();
         }
@@ -65,19 +65,19 @@ public class PlayerMove : MonoBehaviour
         float angleTheta0 = angleTheta;
         float anglePhi0 = anglePhi;
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickRight) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickRight))
         {
             angleTheta += 10f;
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickLeft) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickLeft))
         {
             angleTheta -= 10f;
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickUp) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickUp))
         {
             anglePhi += 10f;
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickDown) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickDown))
         {
             anglePhi -= 10f;
         }

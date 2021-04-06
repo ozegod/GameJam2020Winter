@@ -48,7 +48,7 @@ public class PlayerData : MonoBehaviour
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger))
             {
                 diceController.a++;
                 diceController.DiceRoll();
@@ -76,7 +76,7 @@ public class PlayerData : MonoBehaviour
         }
 
         //スペースキー押された回数をとりあえずカウント
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger))
         {
             countspace++;
         }

@@ -15,6 +15,7 @@ public class GravityAttractor : MonoBehaviour
 
         body.rotation = Quaternion.FromToRotation(bodyUp, targetDir) * body.rotation;
         GameObject.FindGameObjectWithTag("objects").GetComponent<Rigidbody>().AddForce(targetDir * gravity);
+        GameObject.Find("Player1").GetComponent<Rigidbody>().AddForce(targetDir * gravity);
     }
 
 }

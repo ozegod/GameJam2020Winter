@@ -5,6 +5,10 @@
     ],
     "m_SettingValues": [
         "True",
+<<<<<<< HEAD
         "True"
+=======
+        "False"
+>>>>>>> Photon
     ]
 }

@@ -16,8 +16,13 @@ TagManager:
   - UI
   - 
   - 
+<<<<<<< HEAD
   - MainCamera
   - Ground
+=======
+  - InstructionUI
+  - 
+>>>>>>> Photon
   - 
   - 
   - 

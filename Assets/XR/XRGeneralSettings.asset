@@ -1,8 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< HEAD
---- !u!114 &-1038994854326970448
-=======
 --- !u!114 &-6107825139136625805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,7 +32,6 @@ MonoBehaviour:
   m_Loaders:
   - {fileID: 11400000, guid: 70c20a71b14a14a2fbfd34b5800f76b0, type: 2}
 --- !u!114 &-2480917794912314820
->>>>>>> Photon
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47,11 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
   m_Name: Android Settings
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  m_LoaderManagerInstance: {fileID: 7652466311286645871}
-=======
   m_LoaderManagerInstance: {fileID: 8250099769302189865}
->>>>>>> Photon
   m_InitManagerOnStart: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -65,12 +57,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2dc886499c26824283350fa532d087d, type: 3}
   m_Name: XRGeneralSettings
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  Keys: 07000000
-  Values:
-  - {fileID: -1038994854326970448}
---- !u!114 &7652466311286645871
-=======
   Keys: 01000000190000001c00000007000000
   Values:
   - {fileID: 720939741018259634}
@@ -124,7 +110,6 @@ MonoBehaviour:
   m_AutomaticRunning: 0
   m_Loaders: []
 --- !u!114 &8250099769302189865
->>>>>>> Photon
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,9 +125,6 @@ MonoBehaviour:
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
   m_Loaders:
-<<<<<<< HEAD
-  - {fileID: 11400000, guid: 21664905fd4a84cccb6852c3eba7c480, type: 2}
-=======
   - {fileID: 11400000, guid: 70c20a71b14a14a2fbfd34b5800f76b0, type: 2}
 --- !u!114 &8623785127959463263
 MonoBehaviour:
@@ -158,4 +140,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LoaderManagerInstance: {fileID: 3565739114793408107}
   m_InitManagerOnStart: 1
->>>>>>> Photon

@@ -43,7 +43,7 @@ public class GameConnect : MonoBehaviourPunCallbacks
     {
         Debug.Log("ルームに入りました。");
         fade.FadeOut();
-        SceneManager.LoadLevel("Game2");
+        SceneManager.LoadScene("Game2");
     }
 
     #endregion

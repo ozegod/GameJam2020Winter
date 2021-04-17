@@ -1,8 +1,12 @@
 ﻿<Properties StartupConfiguration="{8FC2A022-14F0-C3C0-455B-6CF8272569AC}|">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Photon/PhotonUnityNetworking/Resources/Script/GameConnect.cs">
+    <Files>
+      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/GameConnect.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bbde68c7-8ff6-4a9c-b598-a5458d4f9256" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9effab2c-9395-44c2-9958-872f99ff0343" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

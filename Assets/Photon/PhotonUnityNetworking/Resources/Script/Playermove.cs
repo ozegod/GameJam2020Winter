@@ -47,6 +47,10 @@ public class PlayerMove : MonoBehaviour
         {
             MoveStart();
         }
+        else if (Input.GetKey(KeyCode.UpArrow)|| Input.GetKey(KeyCode.DownArrow)|| Input.GetKey(KeyCode.RightArrow)|| Input.GetKey(KeyCode.LeftArrow))
+        {
+            MoveStart();
+        }
         else
         {
             MoveStop();
@@ -65,19 +69,19 @@ public class PlayerMove : MonoBehaviour
         float angleTheta0 = angleTheta;
         float anglePhi0 = anglePhi;
 
-        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickRight) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickRight))
+        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickRight) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickRight)|| Input.GetKey(KeyCode.RightArrow))
         {
             angleTheta += 10f;
         }
-        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickLeft) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickLeft))
+        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickLeft) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickLeft)|| Input.GetKey(KeyCode.LeftArrow))
         {
             angleTheta -= 10f;
         }
-        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickUp) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickUp))
+        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickUp) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickUp)|| Input.GetKey(KeyCode.UpArrow))
         {
             anglePhi += 10f;
         }
-        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickDown) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickDown))
+        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickDown) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickDown)|| Input.GetKey(KeyCode.DownArrow))
         {
             anglePhi -= 10f;
         }

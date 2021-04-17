@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using Photon.Pun;
 using Photon.Realtime;
 
-public class GameConnect : MonoBehaviourPunCallbacks
+public class GameConnectforPC : MonoBehaviourPunCallbacks
 {
     #region Public変数定義
 
@@ -42,7 +42,7 @@ public class GameConnect : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         Debug.Log("ルームに入りました。");
-        SceneManager.LoadScene("Game2");
+        SceneManager.LoadScene("Game2forPC");
     }
 
     #endregion

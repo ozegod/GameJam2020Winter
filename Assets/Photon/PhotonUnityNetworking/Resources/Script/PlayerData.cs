@@ -10,14 +10,13 @@ public class PlayerData : MonoBehaviour
     public float z;
     public float angleTheta;
     public float anglePhi;
-    readonly int r = 5;
+    readonly int r = 50;
 
     GameObject Dice;
     DiceController diceController;
     public PlayerMove playermove;
     [SerializeField]
     // 現在自分のターンかどうか
-    private bool myTurn;
     public  int D = 0;
     public int countspace = 0;
 
@@ -41,39 +40,31 @@ public class PlayerData : MonoBehaviour
     void Update()
     {
         this.transform.position = GetPositionOnSphere(angleTheta, anglePhi, r);
-
-        if (!myTurn)
+        if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) || Input.GetKey(KeyCode.Space))
         {
-            return;
-        }
-        else
-        {
-            if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) || Input.GetKey(KeyCode.Space))
-            {
                 diceController.a++;
                 diceController.DiceRoll();
-            }
-
-            D = int.Parse(this.Dice.GetComponent<Text>().text);
-
-            if (diceController.a % 3 == 2)
-            {
-                if (D > 0)
-                {
-                    D = int.Parse(this.Dice.GetComponent<Text>().text);
-                    playermove.MoveStart();
-                }
-                else
-                {
-                    playermove.MoveStop();
-                }
-            }
-            if ((diceController.a % 3 == 0) && (diceController.a > 0))
-            {
-                playermove.u = 0;
-            }
-            
         }
+
+        D = int.Parse(this.Dice.GetComponent<Text>().text);
+
+        if (diceController.a % 3 == 2)
+        {
+            if (D > 0)
+            {
+                D = int.Parse(this.Dice.GetComponent<Text>().text);
+                playermove.MoveStart();
+            }
+            else
+            {
+                playermove.MoveStop();
+            }
+        }
+        if ((diceController.a % 3 == 0) && (diceController.a > 0))
+        {
+                playermove.u = 0;
+        }
+            
 
         //スペースキー押された回数をとりあえずカウント
         if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) || Input.GetKey(KeyCode.Space))

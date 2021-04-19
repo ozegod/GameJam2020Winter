@@ -1,0 +1,729 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/yoichinoso/Documents/Unity/GameJam2020Winter
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49542
+Successfully changed project path to: /Users/yoichinoso/Documents/Unity/GameJam2020Winter
+/Users/yoichinoso/Documents/Unity/GameJam2020Winter
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 76.68 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 20.50 ms.
+Initialize engine version: 2020.3.4f1 (0abb6314276a)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/yoichinoso/Documents/Unity/GameJam2020Winter/Assets
+GfxDevice: creating device client; threaded=0
+2021-04-19 23:51:24.909 Unity[900:16241] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2021-04-19 23:51:24.909 Unity[900:16241] Metal devices available: 1
+2021-04-19 23:51:24.909 Unity[900:16241] 0: Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2021-04-19 23:51:24.909 Unity[900:16241] Using device Intel(R) Iris(TM) Plus Graphics 645 (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 645
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56900
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.4f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003977 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 56.41 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.54 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.140 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.007182 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.55 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.123 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.74 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.58 ms.
+Unloading 2010 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 170.3 MB.
+System memory in use after: 170.4 MB.
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 2449.
+Total: 2.416746 ms (FindLiveObjects: 0.280990 ms CreateObjectMapping: 0.099359 ms MarkObjects: 1.920056 ms  DeleteObjects: 0.115271 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Script
+  artifactKey: Guid(a1b71c564c2b64aa0a4e68f169a3be89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script using Guid(a1b71c564c2b64aa0a4e68f169a3be89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1396d832d82a526152f3cee5cc8a6b23') in 0.018228 seconds
+  Import took 0.028076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.269074 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/GameManagerScript.cs
+  artifactKey: Guid(8e8c9bea740ff4b958af66031435416d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/GameManagerScript.cs using Guid(8e8c9bea740ff4b958af66031435416d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc74787a0256b1539c1a4de152cfd82c') in 0.450776 seconds
+  Import took 0.455215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 98.083782 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c9a9f03600f487b28bbc230f3202f2c') in 1.715591 seconds
+  Import took 1.723417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.445165 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '590641ed7bb8ef238a7dfb76a4e906dd') in 0.196335 seconds
+  Import took 0.203831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.209291 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc8877be9253b1b1997eb64cbf32d145') in 0.179811 seconds
+  Import took 0.189228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.744151 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e41099a0d19f59bb1b9082f818b7bfec') in 0.187017 seconds
+  Import took 0.195639 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003941 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.59 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.081 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.71 ms.
+Unloading 1952 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 173.8 MB.
+System memory in use after: 173.9 MB.
+
+Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 2463.
+Total: 4.453254 ms (FindLiveObjects: 0.434370 ms CreateObjectMapping: 0.176785 ms MarkObjects: 3.773781 ms  DeleteObjects: 0.066087 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 16.08 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 1.46 ms.
+Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 141.8 MB.
+System memory in use after: 141.9 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2463.
+Total: 3.924826 ms (FindLiveObjects: 0.358560 ms CreateObjectMapping: 0.135994 ms MarkObjects: 3.379153 ms  DeleteObjects: 0.047537 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004584 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.67 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.117 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.50 ms.
+Unloading 1952 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 174.1 MB.
+System memory in use after: 174.2 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2467.
+Total: 2.349687 ms (FindLiveObjects: 0.338912 ms CreateObjectMapping: 0.107250 ms MarkObjects: 1.875722 ms  DeleteObjects: 0.025835 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 244.992966 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fbc528b765c21519b51adec1e862d4b') in 1.006759 seconds
+  Import took 1.015508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.284485 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4113d24273cd61e8ca7864a201dc47f4') in 0.212986 seconds
+  Import took 0.220403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 117.467334 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '020204068eff809def2fa7a7a722bc03') in 0.382302 seconds
+  Import took 0.419397 seconds .
+
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 15.15 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.84 ms.
+Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.0 MB.
+System memory in use after: 149.2 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2468.
+Total: 15.652454 ms (FindLiveObjects: 0.309914 ms CreateObjectMapping: 0.086993 ms MarkObjects: 15.188295 ms  DeleteObjects: 0.066137 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.464012 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerManager.cs
+  artifactKey: Guid(1e9864be0eda144dbbcb9eba531bf906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerManager.cs using Guid(1e9864be0eda144dbbcb9eba531bf906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3674a5c23b5961f37b2b7ba99ab16aed') in 0.012663 seconds
+  Import took 0.017864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.920698 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/GameManagerScript.cs
+  artifactKey: Guid(8e8c9bea740ff4b958af66031435416d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/GameManagerScript.cs using Guid(8e8c9bea740ff4b958af66031435416d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e50bd8506e041c53bab70b3ad24f12e') in 0.004360 seconds
+  Import took 0.009616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.411085 seconds.
+  path: Assets/Resources/ONSPSettings.asset
+  artifactKey: Guid(3a441d476e05b421cbaa971be124fcb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/ONSPSettings.asset using Guid(3a441d476e05b421cbaa971be124fcb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18da3a9bffb59e754cf5eeef1939598d') in 1.067069 seconds
+  Import took 1.072515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000472 seconds.
+  path: Assets/Resources/OVRBuildConfig.asset
+  artifactKey: Guid(4371ebdccaf33472cba294722e77e4f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/OVRBuildConfig.asset using Guid(4371ebdccaf33472cba294722e77e4f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9980a2a569688b59af7133b84720ec77') in 0.003485 seconds
+  Import took 0.008095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Resources/OVRPlatformToolSettings.asset
+  artifactKey: Guid(d980322db4b064ff19e40a081e9a85a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/OVRPlatformToolSettings.asset using Guid(d980322db4b064ff19e40a081e9a85a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb48be2dce6b4ec7e0070c6b1565f17') in 0.004889 seconds
+  Import took 0.009484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.324067 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3b55e728bf89a9754af8f223414d5e8') in 0.372878 seconds
+  Import took 0.379842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.809070 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94240fee961aaa51e07a255c936dea5f') in 0.198668 seconds
+  Import took 0.206782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.835607 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd1fa51016602cf2052c6604028dfd1b') in 0.196135 seconds
+  Import took 0.203961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.027269 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f429ea532d8061ce7052ee1b547ce3f7') in 0.177473 seconds
+  Import took 0.184752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.678108 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e3b151323cf25ec164b2fda02cf8da1') in 0.209755 seconds
+  Import took 0.218380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.798576 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6893794d37484db6cd12dac7225ddb97') in 0.193754 seconds
+  Import took 0.201669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.842565 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53dddf501a1a0ef0f9ae8263909608e5') in 0.202780 seconds
+  Import took 0.210100 seconds .
+
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 13.27 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.85 ms.
+Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 165.4 MB.
+System memory in use after: 165.5 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2468.
+Total: 15.108447 ms (FindLiveObjects: 0.310454 ms CreateObjectMapping: 0.130463 ms MarkObjects: 14.630301 ms  DeleteObjects: 0.035881 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005599 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.59 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.183 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 1.22 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.98 ms.
+Unloading 1952 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.5 MB.
+System memory in use after: 183.6 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2472.
+Total: 4.036098 ms (FindLiveObjects: 0.604243 ms CreateObjectMapping: 0.195812 ms MarkObjects: 3.193638 ms  DeleteObjects: 0.039829 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 212.910995 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371b81ca19488099fade59bb75b73d5d') in 0.357991 seconds
+  Import took 0.366111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.062838 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5204680db1196064a2e364735c8e8738') in 0.196650 seconds
+  Import took 0.205001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.171572 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243d8d3742b14644407b5f3d5f1187cd') in 0.191321 seconds
+  Import took 0.198112 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.841200 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94061067df09ab3e97449b92aa5feb49') in 0.185004 seconds
+  Import took 0.191904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.091337 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04179c5b0d95652c1d9eddbf372197b9') in 0.180654 seconds
+  Import took 0.190895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.689758 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '992df4258583b4fae5793868d7f796fd') in 0.196889 seconds
+  Import took 0.203547 seconds .
+
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 13.38 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.51 ms.
+Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.4 MB.
+System memory in use after: 160.5 MB.
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2473.
+Total: 2.687063 ms (FindLiveObjects: 0.230306 ms CreateObjectMapping: 0.074724 ms MarkObjects: 2.337346 ms  DeleteObjects: 0.043716 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 149.089230 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9203936880dc3b7217581720a76b125') in 0.247042 seconds
+  Import took 0.255502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.583141 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7303f7ad74c9a0f1dc41fdaa876d008b') in 0.186680 seconds
+  Import took 0.194913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.647922 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e89db3d4469817b6ca53efe38ec987b') in 0.184605 seconds
+  Import took 0.193993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.463345 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ba32a8a8a1df75a836d77fb1a7b046a') in 0.193663 seconds
+  Import took 0.201364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.482448 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40709985d31ab4e3a7d2958576bb7808') in 0.187911 seconds
+  Import took 0.197359 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004556 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.68 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.139 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 1.11 ms.
+Unloading 1952 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 185.0 MB.
+System memory in use after: 185.1 MB.
+
+Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 2477.
+Total: 2.221380 ms (FindLiveObjects: 0.247429 ms CreateObjectMapping: 0.093210 ms MarkObjects: 1.830226 ms  DeleteObjects: 0.049368 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 5.88 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.53 ms.
+Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 151.5 MB.
+System memory in use after: 151.6 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2477.
+Total: 2.096889 ms (FindLiveObjects: 0.277177 ms CreateObjectMapping: 0.094306 ms MarkObjects: 1.708255 ms  DeleteObjects: 0.016052 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010277 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.56 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.082 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.54 ms.
+Unloading 1952 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 185.4 MB.
+System memory in use after: 185.5 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2481.
+Total: 2.184454 ms (FindLiveObjects: 0.386477 ms CreateObjectMapping: 0.097518 ms MarkObjects: 1.676299 ms  DeleteObjects: 0.022678 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 178.294876 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/GameConnect.cs
+  artifactKey: Guid(85bc9ac85923c4890b72907f5f55f94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/GameConnect.cs using Guid(85bc9ac85923c4890b72907f5f55f94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bc0f4e432cff425516107770167168e') in 0.012368 seconds
+  Import took 0.016604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006511 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/GameConnect.cs
+  artifactKey: Guid(85bc9ac85923c4890b72907f5f55f94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/GameConnect.cs using Guid(85bc9ac85923c4890b72907f5f55f94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bc0f4e432cff425516107770167168e') in 0.001546 seconds
+  Import took 0.005108 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005981 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.59 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.087 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.53 ms.
+Unloading 1952 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 185.6 MB.
+System memory in use after: 185.7 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2485.
+Total: 2.610846 ms (FindLiveObjects: 0.348629 ms CreateObjectMapping: 0.098250 ms MarkObjects: 2.103456 ms  DeleteObjects: 0.058066 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 88.615794 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/GameManagerScript.cs
+  artifactKey: Guid(8e8c9bea740ff4b958af66031435416d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/GameManagerScript.cs using Guid(8e8c9bea740ff4b958af66031435416d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc1c34a23b0d768b78435876829fb7f8') in 0.005377 seconds
+  Import took 0.009652 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001944 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.60 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.183 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.55 ms.
+Unloading 1952 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 185.9 MB.
+System memory in use after: 186.0 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2489.
+Total: 2.209342 ms (FindLiveObjects: 0.375915 ms CreateObjectMapping: 0.084092 ms MarkObjects: 1.705836 ms  DeleteObjects: 0.041989 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 5.85 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.54 ms.
+Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.4 MB.
+System memory in use after: 152.5 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2489.
+Total: 1.938934 ms (FindLiveObjects: 0.247428 ms CreateObjectMapping: 0.077350 ms MarkObjects: 1.585011 ms  DeleteObjects: 0.027179 ms)
+
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 5.77 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.89 ms.
+Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 152.6 MB.
+System memory in use after: 152.7 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2489.
+Total: 15.814304 ms (FindLiveObjects: 0.982398 ms CreateObjectMapping: 0.132826 ms MarkObjects: 14.621617 ms  DeleteObjects: 0.075381 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004739 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.57 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.164 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.56 ms.
+Unloading 1952 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.5 MB.
+System memory in use after: 186.6 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2493.
+Total: 2.324781 ms (FindLiveObjects: 0.339253 ms CreateObjectMapping: 0.111715 ms MarkObjects: 1.848581 ms  DeleteObjects: 0.023291 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 360.150401 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources
+  artifactKey: Guid(264268faa68f4402896d8836350a2798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources using Guid(264268faa68f4402896d8836350a2798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79e010361d23f3f067f9c23fb1b34f77') in 0.009542 seconds
+  Import took 0.016271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.233985 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerData.cs
+  artifactKey: Guid(36dabf42b343a4cd6be34dac141f589d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerData.cs using Guid(36dabf42b343a4cd6be34dac141f589d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90043dfec593fe91ea2688f2834b2282') in 0.010187 seconds
+  Import took 0.014376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003115 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerData.cs
+  artifactKey: Guid(36dabf42b343a4cd6be34dac141f589d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerData.cs using Guid(36dabf42b343a4cd6be34dac141f589d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90043dfec593fe91ea2688f2834b2282') in 0.001862 seconds
+  Import took 0.007337 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007308 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.87 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.087 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.54 ms.
+Unloading 1952 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 186.7 MB.
+System memory in use after: 186.8 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2497.
+Total: 2.556148 ms (FindLiveObjects: 0.427975 ms CreateObjectMapping: 0.138454 ms MarkObjects: 1.959588 ms  DeleteObjects: 0.028084 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 36.374779 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerData.cs
+  artifactKey: Guid(36dabf42b343a4cd6be34dac141f589d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerData.cs using Guid(36dabf42b343a4cd6be34dac141f589d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c796f9af5919b19eefbdf4a1bb9c7dc') in 0.007099 seconds
+  Import took 0.014039 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001948 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.54 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.086 seconds
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.50 ms.
+Unloading 1952 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 187.0 MB.
+System memory in use after: 187.0 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2501.
+Total: 2.570022 ms (FindLiveObjects: 0.403776 ms CreateObjectMapping: 0.172741 ms MarkObjects: 1.963253 ms  DeleteObjects: 0.028193 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 6.17 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.55 ms.
+Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 153.5 MB.
+System memory in use after: 153.6 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2501.
+Total: 2.416231 ms (FindLiveObjects: 0.264621 ms CreateObjectMapping: 0.097981 ms MarkObjects: 2.024014 ms  DeleteObjects: 0.028483 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

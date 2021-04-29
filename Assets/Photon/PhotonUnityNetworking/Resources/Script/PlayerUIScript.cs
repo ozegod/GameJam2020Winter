@@ -30,11 +30,6 @@ public class PlayerUIScript : MonoBehaviour
             PlayermoneySlider.value = _target.money;
         }
     }
-    void LateUpdate()
-    {
-        //　カメラと同じ向きに設定
-        transform.rotation = Camera.main.transform.rotation;
-    }
     #endregion
 
     #region Public Methods

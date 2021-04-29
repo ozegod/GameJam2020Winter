@@ -3,63 +3,93 @@
     "m_SelectedPackage": {
         "deviceId": "1PASH9AVAQ0197",
         "name": "com.DefaultCompany.GameJam2020Winter",
-        "processId": 7781,
+        "processId": 13647,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "1PASH9AVAQ0197",
-            "name": "com.oculus.vrshell",
-            "processId": 1781,
+            "name": "com.oculus.shellenv",
+            "processId": 2483,
             "exited": false
         },
         {
             "deviceId": "1PASH9AVAQ0197",
             "name": "com.DefaultCompany.GameJam2020Winter",
-            "processId": 4992,
+            "processId": 9072,
+            "exited": true
+        },
+        {
+            "deviceId": "1PASH9AVAQ0197",
+            "name": "com.DefaultCompany.GameJam2020Winter",
+            "processId": 9428,
+            "exited": true
+        },
+        {
+            "deviceId": "1PASH9AVAQ0197",
+            "name": "com.DefaultCompany.GameJam2020Winter",
+            "processId": 9939,
+            "exited": true
+        },
+        {
+            "deviceId": "1PASH9AVAQ0197",
+            "name": "com.DefaultCompany.GameJam2020Winter",
+            "processId": 10231,
+            "exited": true
+        },
+        {
+            "deviceId": "1PASH9AVAQ0197",
+            "name": "com.DefaultCompany.GameJam2020Winter",
+            "processId": 10822,
+            "exited": true
+        },
+        {
+            "deviceId": "1PASH9AVAQ0197",
+            "name": "com.DefaultCompany.GameJam2020Winter",
+            "processId": 11259,
             "exited": false
         },
         {
             "deviceId": "1PASH9AVAQ0197",
             "name": "com.DefaultCompany.GameJam2020Winter",
-            "processId": 5496,
+            "processId": 11727,
             "exited": false
         },
         {
             "deviceId": "1PASH9AVAQ0197",
             "name": "com.DefaultCompany.GameJam2020Winter",
-            "processId": 5804,
+            "processId": 12049,
             "exited": false
         },
         {
             "deviceId": "1PASH9AVAQ0197",
             "name": "com.DefaultCompany.GameJam2020Winter",
-            "processId": 6196,
+            "processId": 12279,
             "exited": false
         },
         {
             "deviceId": "1PASH9AVAQ0197",
             "name": "com.DefaultCompany.GameJam2020Winter",
-            "processId": 6619,
+            "processId": 12571,
             "exited": false
         },
         {
             "deviceId": "1PASH9AVAQ0197",
             "name": "com.DefaultCompany.GameJam2020Winter",
-            "processId": 7005,
+            "processId": 13024,
             "exited": false
         },
         {
             "deviceId": "1PASH9AVAQ0197",
             "name": "com.DefaultCompany.GameJam2020Winter",
-            "processId": 7324,
+            "processId": 13434,
             "exited": false
         },
         {
             "deviceId": "1PASH9AVAQ0197",
             "name": "com.DefaultCompany.GameJam2020Winter",
-            "processId": 7781,
+            "processId": 13647,
             "exited": false
         }
     ],

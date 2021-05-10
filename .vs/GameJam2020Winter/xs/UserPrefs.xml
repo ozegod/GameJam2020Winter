@@ -1,14 +1,16 @@
 ﻿<Properties StartupConfiguration="{8FC2A022-14F0-C3C0-455B-6CF8272569AC}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Photon/PhotonUnityNetworking/Resources/Script/FollowHUD.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerMove.cs">
     <Files>
-      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/MyRayPoniter.cs" Line="14" Column="39" />
-      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/FollowHUD.cs" Line="28" Column="36" />
-      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/CameraEnable.cs" Line="13" Column="2" />
+      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/DiceController.cs" Line="16" Column="44" />
+      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerData.cs" Line="31" Column="1" />
+      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerMove.cs" Line="23" Column="28" />
+      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/GravityAttractor.cs" Line="1" Column="1" />
+      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/GravityBody.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0036416b-026d-43dd-a911-eeddd57bbfee" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8ed8378f-d4fa-4d3e-b176-b2899a6b6283" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

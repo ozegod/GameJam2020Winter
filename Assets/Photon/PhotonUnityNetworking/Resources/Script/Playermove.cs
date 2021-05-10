@@ -1,102 +1,125 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerMove : MonoBehaviour
 {
-    Text Dice;
-    DiceController diceController;
-    [SerializeField]
+    public Text Text;
+
+    float latitude;
+    float longitude;
+    float latitude0;
+    float longitude0;
+    //playerの原点からの距離=地球の半径 
+    //float r = 50f;
+
+    float cameraSensitivityX;
+    float walkSpeed;
+    public GameObject cameraT;
+    float verticalLookRotation;
+    Vector3 moveAmount;
+    Vector3 smoothMoveVelocity;
+
+    int a;
+    public GameObject Dice;
+    public GameObject DiceController;
+    Rigidbody rigid;
     bool Moving;
-    public PlayerData player;
-    public int u;
-    public int step;
+    int step;
+    int max_step;
 
     // Start is called before the first frame update
     void Start()
     {
-        diceController = GameObject.Find("DiceController").GetComponent<DiceController>();
-        Dice = GameObject.Find("Dice").GetComponent<Text>(); 
-        u = 0;
+        rigid = this.GetComponent<Rigidbody>();
+        cameraSensitivityX = 150f;
+        walkSpeed = 3f;
+        a = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if ((Input.GetKeyDown(KeyCode.RightArrow)) || (Input.GetKeyDown(KeyCode.LeftArrow)) || (Input.GetKeyDown(KeyCode.UpArrow)) || (Input.GetKeyDown(KeyCode.DownArrow)))
-        if(Moving)
-        {
-            PlayerMovement(player.D);
-        }
-    }
+        //左スティックでカメラの操作
+        this.transform.Rotate(Vector3.up * OVRInput.Get(OVRInput.RawAxis2D.LThumbstick).x * Time.deltaTime * cameraSensitivityX);
 
-    public void MoveStart()
-    {
-        Moving = true;
-    }
+        #region
+        //Playerの座標を求めるプログラム
+        float Car_X = this.GetComponent<Rigidbody>().position.x;
+        float Car_Y = this.GetComponent<Rigidbody>().position.y;
+        float Car_Z = this.GetComponent<Rigidbody>().position.z;
 
-    public void MoveStop()
-    {
-        Moving = false;
-    }
-
-    public void Movemove()
-    {
-        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickRight) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickRight) || OVRInput.GetDown(OVRInput.RawButton.LThumbstickLeft) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickLeft) || OVRInput.GetDown(OVRInput.RawButton.LThumbstickUp) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickUp) || OVRInput.GetDown(OVRInput.RawButton.LThumbstickDown) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickDown))
+        //緯度(latitude)に値するもの（南半球の場合-0度から-90度まで）、longitudeは0から360まで
+        latitude = Mathf.Rad2Deg * Mathf.Atan(Car_Y / Mathf.Sqrt(Mathf.Pow(Car_X, 2) + Mathf.Pow(Car_Z, 2)));
+        if (Car_Z == 0)
         {
-            MoveStart();
-        }
-        else if (Input.GetKey(KeyCode.UpArrow)|| Input.GetKey(KeyCode.DownArrow)|| Input.GetKey(KeyCode.RightArrow)|| Input.GetKey(KeyCode.LeftArrow))
-        {
-            MoveStart();
+            longitude = 0;
         }
         else
         {
-            MoveStop();
+            longitude = Mathf.Rad2Deg * Mathf.Atan(Car_X / Car_Z);
         }
+
+        if (OVRInput.GetDown(OVRInput.RawButton.X))
+        {
+            Debug.Log("緯度：" + latitude + "緯度：" + longitude);
+        }
+        #endregion
+
+        int D = int.Parse(Dice.GetComponent<Text>().text);
+        Text.text = latitude.ToString() + " : " + longitude.ToString() + " : " + Moving.ToString() + " : " + D.ToString() + " : " + a.ToString();
+
+        if (((D == 0) || a % 3 == 1) && (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger)))
+        {
+            step = 0;
+            a = DiceController.GetComponent<DiceController>().a += 1;
+            DiceController.GetComponent<DiceController>().DiceRoll();
+            latitude0 = latitude;
+            longitude0 = longitude;
+        }
+
+        if (a % 3 == 2)
+        {
+            if (D > 0)
+            {
+                if ((latitude == latitude0) && (longitude == longitude0))
+                {
+                    max_step = D;
+                }
+                Moving = true;
+            }
+            else
+            {
+                Moving = false;
+                rigid.velocity = Vector3.zero;
+                rigid.angularVelocity = Vector3.zero;
+                rigid.isKinematic = true;
+                DiceController.GetComponent<DiceController>().a = a + 1;
+            }
+        }
+
+        if (Moving)
+        {
+            Vector3 moveDir = new Vector3(OVRInput.Get(OVRInput.RawAxis2D.RThumbstick).x, 0, OVRInput.Get(OVRInput.RawAxis2D.RThumbstick).y).normalized;
+            Vector3 targetMoveAmount = moveDir * walkSpeed;
+            moveAmount = Vector3.SmoothDamp(moveAmount, targetMoveAmount, ref smoothMoveVelocity, .15f);
+            rigid.isKinematic = false;
+
+            step = (int)(Math.Abs((latitude0 - latitude) + Math.Abs(longitude0 - longitude)) / 10f);
+            Dice.GetComponent<Text>().text = (max_step - step).ToString();
+        }
+
     }
 
-    public void PlayerMovement(int e)
+    void FixedUpdate()
     {
-        float angleTheta;
-        float anglePhi;
-
-        angleTheta = player.angleTheta;
-        anglePhi = player.anglePhi;
-
-        step = 0;
-        float angleTheta0 = angleTheta;
-        float anglePhi0 = anglePhi;
-
-        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickRight) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickRight)|| Input.GetKey(KeyCode.RightArrow))
-        {
-            angleTheta += 10f;
-        }
-        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickLeft) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickLeft)|| Input.GetKey(KeyCode.LeftArrow))
-        {
-            angleTheta -= 10f;
-        }
-        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickUp) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickUp)|| Input.GetKey(KeyCode.UpArrow))
-        {
-            anglePhi += 10f;
-        }
-        if (OVRInput.GetDown(OVRInput.RawButton.LThumbstickDown) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickDown)|| Input.GetKey(KeyCode.DownArrow))
-        {
-            anglePhi -= 10f;
-        }
-        PlayerPosition(angleTheta, anglePhi);
-        step = (int)Mathf.Abs(angleTheta0 - angleTheta) + (int)Mathf.Abs(anglePhi0 - anglePhi);
-        Dice.text = (e - step / 10).ToString();
-
+        GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + transform.TransformDirection(moveAmount) * Time.fixedDeltaTime);
     }
 
-    public void PlayerPosition(float AngleTheta, float AnglePhi)
-    {
-        player.angleTheta = AngleTheta;
-        player.anglePhi = AnglePhi;
-    }
-
+    //OculusQuestにおけるボタンやキー入力のコードのメモ
+    //(OVRInput.GetDown(OVRInput.RawButton.LThumbstickRight) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickRight) || OVRInput.GetDown(OVRInput.RawButton.LThumbstickLeft) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickLeft) || OVRInput.GetDown(OVRInput.RawButton.LThumbstickUp) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickUp) || OVRInput.GetDown(OVRInput.RawButton.LThumbstickDown) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickDown))
 
 }
 

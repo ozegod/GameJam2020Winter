@@ -6,10 +6,9 @@ using UnityEngine.UI;
 public class DiceController : MonoBehaviour
 {
     public GameObject Dice;
-    public static int d = 0;
     public int a = 0;
 
-    public bool moving;
+    bool moving;
 
     public void RandomDice()
     {
@@ -33,8 +32,7 @@ public class DiceController : MonoBehaviour
 
     public void DiceRoll()
     {
-        a += 1;
-        if (a % 2 != 0)
+        if (a % 3 == 1)
         {
             DiceStart();
         }

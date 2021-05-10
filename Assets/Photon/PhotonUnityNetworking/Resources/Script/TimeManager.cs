@@ -7,18 +7,24 @@ public class TimeManager : MonoBehaviour
 {
     public static float t;
     GameObject time;
+    bool TimerStart;
 
     // Start is called before the first frame update
     void Start()
     {
         time = this.gameObject;
-        t = 30.0f;
+        t = 300.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (t >= 0)
+         if (OVRInput.GetDown(OVRInput.RawButton.A))
+        {
+            TimerStart = true;
+        }
+
+        if ((t >= 0 ) && (TimerStart) )
         {
             t -= Time.deltaTime;
         }

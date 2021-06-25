@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "1PASH9AVAQ0197",
+    "m_SelectedDeviceId": "1WMHH83ALJ0504",
     "m_SelectedPackage": {
-        "deviceId": "1PASH9AVAQ0197",
+        "deviceId": "1WMHH83ALJ0504",
         "name": "com.DefaultCompany.GameJam2020Winter",
-        "processId": 13290,
+        "processId": 12122,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -72,6 +72,42 @@
             "deviceId": "1PASH9AVAQ0197",
             "name": "com.DefaultCompany.GameJam2020Winter",
             "processId": 13290,
+            "exited": false
+        },
+        {
+            "deviceId": "1PASH9AVAQ0197",
+            "name": "com.DefaultCompany.GameJam2020Winter",
+            "processId": 9455,
+            "exited": false
+        },
+        {
+            "deviceId": "1PASH9AVAQ0197",
+            "name": "com.DefaultCompany.GameJam2020Winter",
+            "processId": 11244,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH83ALJ0504",
+            "name": "com.DefaultCompany.GameJam2020Winter",
+            "processId": 4837,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH83ALJ0504",
+            "name": "com.DefaultCompany.GameJam2020Winter",
+            "processId": 9360,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH83ALJ0504",
+            "name": "com.DefaultCompany.GameJam2020Winter",
+            "processId": 20855,
+            "exited": false
+        },
+        {
+            "deviceId": "1WMHH83ALJ0504",
+            "name": "com.DefaultCompany.GameJam2020Winter",
+            "processId": 12122,
             "exited": false
         }
     ],

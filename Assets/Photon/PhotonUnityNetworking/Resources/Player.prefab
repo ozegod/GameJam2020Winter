@@ -1166,13 +1166,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5971674169871530837}
-  m_LocalRotation: {x: 0.17364816, y: -0, z: -0, w: 0.9848078}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 1, z: -4}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 7966919423698619232}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!108 &4953388773499234505
 Light:
   m_ObjectHideFlags: 0
@@ -1412,9 +1412,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6668666387691659823}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 4}
-  m_LocalScale: {x: 0.004192872, y: 0.004192872, z: 0.004192872}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4142672984779975953}
   - {fileID: 1467169883144654957}
@@ -1426,9 +1426,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: -0.0000030994415}
-  m_SizeDelta: {x: 1432, y: 954.00006}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!223 &7461162183844702781
 Canvas:
   m_ObjectHideFlags: 0
@@ -1438,9 +1438,9 @@ Canvas:
   m_GameObject: {fileID: 6668666387691659823}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 2
+  m_RenderMode: 1
   m_Camera: {fileID: 7287111186174864636}
-  m_PlaneDistance: 2
+  m_PlaneDistance: 3
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -1472,7 +1472,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &7211902970124366110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1505,7 +1505,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  pointer: {fileID: 0}
+  pointer: {fileID: 1623434412833232307}
   sortOrder: 0
 --- !u!1 &7582713339684196104
 GameObject:
@@ -1905,6 +1905,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerUiPrefab: {fileID: 6668666387691659823}
+  mainCamera: {fileID: 6416523546081104870}
+  UICamera: {fileID: 8317771014087207888}
   money: 0
 --- !u!54 &6154668763798755571
 Rigidbody:
@@ -1951,7 +1953,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1008910607582229521
 Transform:
   m_ObjectHideFlags: 0

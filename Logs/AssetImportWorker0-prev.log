@@ -12,92 +12,67 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64240
+51939
 Successfully changed project path to: /Users/yoichinoso/Documents/Unity/GameJam2020Winter
 /Users/yoichinoso/Documents/Unity/GameJam2020Winter
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 78.07 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 15.78 ms.
+Refreshing native plugins compatible for Editor in 66.68 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 17.49 ms.
 Initialize engine version: 2020.3.4f1 (0abb6314276a)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/yoichinoso/Documents/Unity/GameJam2020Winter/Assets
 GfxDevice: creating device client; threaded=0
-2021-05-10 16:44:15.043 Unity[27166:1242862] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 645 (low power)
-2021-05-10 16:44:15.043 Unity[27166:1242862] Metal devices available: 1
-2021-05-10 16:44:15.043 Unity[27166:1242862] 0: Intel(R) Iris(TM) Plus Graphics 645 (low power)
-2021-05-10 16:44:15.043 Unity[27166:1242862] Using device Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2021-06-22 13:58:07.262 Unity[19388:1192558] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2021-06-22 13:58:07.262 Unity[19388:1192558] Metal devices available: 1
+2021-06-22 13:58:07.262 Unity[19388:1192558] 0: Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2021-06-22 13:58:07.262 Unity[19388:1192558] Using device Intel(R) Iris(TM) Plus Graphics 645 (low power)
 Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 645
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56166
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56388
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.4f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001979 seconds.
+Registered in 0.000939 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 52.47 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.58 ms.
+Refreshing native plugins compatible for Editor in 53.95 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.63 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.453 seconds
+- Completed reload, in  4.143 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005014 seconds.
+Registered in 0.001927 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.54 ms.
+Refreshing native plugins compatible for Editor in 0.76 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.60 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.153 seconds
+- Completed reload, in  1.126 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Launching external process: /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
-Refreshing native plugins compatible for Editor in 0.81 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.83 ms, found 5 plugins.
 Preloading 1 native plugins for Editor in 0.57 ms.
-Unloading 2012 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 171.4 MB.
-System memory in use after: 171.5 MB.
+Unloading 2011 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.3 MB.
+System memory in use after: 171.4 MB.
 
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 2451.
-Total: 2.807904 ms (FindLiveObjects: 0.268361 ms CreateObjectMapping: 0.087538 ms MarkObjects: 2.321550 ms  DeleteObjects: 0.128711 ms)
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 2450.
+Total: 2.552732 ms (FindLiveObjects: 0.318597 ms CreateObjectMapping: 0.099342 ms MarkObjects: 2.011354 ms  DeleteObjects: 0.122397 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/DiceController.cs
-  artifactKey: Guid(66d80c142539747d48266ad6d7488743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/DiceController.cs using Guid(66d80c142539747d48266ad6d7488743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cbc4c65edbb27ba8828c93fd393ba46') in 0.360205 seconds
-  Import took 0.365094 seconds .
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
+  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c16c0aa1ce00e31052939f98ff9c2da0') in 1.472401 seconds
+  Import took 1.480685 seconds .
 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005192 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.84 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.172 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.58 ms.
-Unloading 1954 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 167.0 MB.
-System memory in use after: 167.1 MB.
-
-Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2455.
-Total: 2.950616 ms (FindLiveObjects: 0.407887 ms CreateObjectMapping: 0.095935 ms MarkObjects: 2.423036 ms  DeleteObjects: 0.022582 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000

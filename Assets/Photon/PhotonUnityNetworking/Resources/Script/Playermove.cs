@@ -51,7 +51,7 @@ public class PlayerMove : MonoBehaviour
         float Car_Y = this.GetComponent<Rigidbody>().position.y;
         float Car_Z = this.GetComponent<Rigidbody>().position.z;
 
-        //緯度(latitude)に値するもの（南半球の場合-0度から-90度まで）、longitudeは0から360まで
+        //緯度(latitude)に値するもの（南半球の場合-0度から-90度まで）、longitudeは-180から180まで
         latitude = Mathf.Rad2Deg * Mathf.Atan(Car_Y / Mathf.Sqrt(Mathf.Pow(Car_X, 2) + Mathf.Pow(Car_Z, 2)));
         if (Car_Z == 0)
         {
@@ -62,16 +62,12 @@ public class PlayerMove : MonoBehaviour
             longitude = Mathf.Rad2Deg * Mathf.Atan(Car_X / Car_Z);
         }
 
-        if (OVRInput.GetDown(OVRInput.RawButton.X))
-        {
-            Debug.Log("緯度：" + latitude + "緯度：" + longitude);
-        }
         #endregion
 
         int D = int.Parse(Dice.GetComponent<Text>().text);
         Text.text = latitude.ToString() + " : " + longitude.ToString() + " : " + Moving.ToString() + " : " + D.ToString() + " : " + a.ToString();
 
-        if (((D == 0) || a % 3 == 1) && (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger)))
+        if (((D == 0) || a % 3 == 1) && OVRInput.GetDown(OVRInput.Button.One))
         {
             step = 0;
             a = DiceController.GetComponent<DiceController>().a += 1;
@@ -107,7 +103,10 @@ public class PlayerMove : MonoBehaviour
             moveAmount = Vector3.SmoothDamp(moveAmount, targetMoveAmount, ref smoothMoveVelocity, .15f);
             rigid.isKinematic = false;
 
-            step = (int)(Math.Abs((latitude0 - latitude) + Math.Abs(longitude0 - longitude)) / 10f);
+            float la = Math.Abs(latitude0 - latitude);
+            float lo = Math.Abs(longitude0 - longitude);
+
+            step = (int)(Math.Min(la, 360f - la) / 10f + Math.Min(lo, 360f - lo) / 10f);
             Dice.GetComponent<Text>().text = (max_step - step).ToString();
         }
 

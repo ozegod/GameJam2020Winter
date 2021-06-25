@@ -17,7 +17,7 @@ public class GameManagerScript : MonoBehaviourPunCallbacks
 			return;
 		}
 		//Photonに接続していれば自プレイヤーを生成
-		GameObject Player = PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(29f, 29f, 29f), Quaternion.identity, 0);
+		GameObject Player = PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(-31f, 32f, 26f), Quaternion.identity, 0);
 	}
 	void OnGUI()
 	{

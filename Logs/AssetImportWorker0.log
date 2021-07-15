@@ -1,7 +1,7 @@
 Using pre-set license
 
  COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/MacOS/Unity
+/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/MacOS/Unity
 -adb2
 -batchMode
 -noUpm
@@ -12,788 +12,108 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52134
+58178
 Successfully changed project path to: /Users/yoichinoso/Documents/Unity/GameJam2020Winter
 /Users/yoichinoso/Documents/Unity/GameJam2020Winter
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 92.36 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 27.58 ms.
-Initialize engine version: 2020.3.4f1 (0abb6314276a)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Resources/UnitySubsystems
+Refreshing native plugins compatible for Editor in 82.36 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 22.12 ms.
+Initialize engine version: 2020.3.7f1 (dd97f2c94397)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/yoichinoso/Documents/Unity/GameJam2020Winter/Assets
 GfxDevice: creating device client; threaded=0
-2021-06-22 14:34:54.147 Unity[21548:1216986] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 645 (low power)
-2021-06-22 14:34:54.147 Unity[21548:1216986] Metal devices available: 1
-2021-06-22 14:34:54.147 Unity[21548:1216986] 0: Intel(R) Iris(TM) Plus Graphics 645 (low power)
-2021-06-22 14:34:54.147 Unity[21548:1216986] Using device Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2021-07-15 15:44:42.453 Unity[99085:1792174] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2021-07-15 15:44:42.453 Unity[99085:1792174] Metal devices available: 1
+2021-07-15 15:44:42.453 Unity[99085:1792174] 0: Intel(R) Iris(TM) Plus Graphics 645 (low power)
+2021-07-15 15:44:42.453 Unity[99085:1792174] Using device Intel(R) Iris(TM) Plus Graphics 645 (low power)
 Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 645
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = '/Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56548
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56085
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2020.3.4f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006423 seconds.
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.7f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005236 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 53.77 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.57 ms.
+Refreshing native plugins compatible for Editor in 50.62 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.71 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  6.884 seconds
+- Completed reload, in  4.007 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010228 seconds.
+Registered in 0.007894 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.95 ms, found 5 plugins.
 Preloading 1 native plugins for Editor in 0.60 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.213 seconds
+- Completed reload, in  1.183 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Launching external process: /Applications/Unity/Hub/Editor/2020.3.4f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.86 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.74 ms.
-Unloading 2011 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 171.2 MB.
-System memory in use after: 171.3 MB.
-
-Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 2450.
-Total: 3.415612 ms (FindLiveObjects: 0.392604 ms CreateObjectMapping: 0.142695 ms MarkObjects: 2.709883 ms  DeleteObjects: 0.168385 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Tokyo.controller
-  artifactKey: Guid(a2f59ce394c224c3dba59ed53989acf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Tokyo.controller using Guid(a2f59ce394c224c3dba59ed53989acf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db1f70d10f674276cf4c952efb26775') in 1.358243 seconds
-  Import took 1.367076 seconds .
-
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 14.86 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.53 ms.
-Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.1 MB.
-System memory in use after: 133.2 MB.
-
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2450.
-Total: 2.667105 ms (FindLiveObjects: 0.231319 ms CreateObjectMapping: 0.068904 ms MarkObjects: 2.325671 ms  DeleteObjects: 0.032058 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 392.421871 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/GamePlayerProperty.cs
-  artifactKey: Guid(86b7550e80fd84f8b8dba0d6a0dea6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/GamePlayerProperty.cs using Guid(86b7550e80fd84f8b8dba0d6a0dea6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e98f142e6f618db9e61a7dc861db3b02') in 0.333626 seconds
-  Import took 0.338790 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.845769 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/GravityAttractor.cs
-  artifactKey: Guid(59e57ebd09c924eaf82cae57e9c5bfde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/GravityAttractor.cs using Guid(59e57ebd09c924eaf82cae57e9c5bfde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c51b6921fb324458ba09e8f11816db') in 0.006186 seconds
-  Import took 0.013528 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003426 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/GravityAttractor.cs
-  artifactKey: Guid(59e57ebd09c924eaf82cae57e9c5bfde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/GravityAttractor.cs using Guid(59e57ebd09c924eaf82cae57e9c5bfde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c51b6921fb324458ba09e8f11816db') in 0.008936 seconds
-  Import took 0.020006 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.643907 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/GravityBody.cs
-  artifactKey: Guid(2986c8023dcd74f34b6e3160c86f7cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/GravityBody.cs using Guid(2986c8023dcd74f34b6e3160c86f7cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6059adb7e09384d35aa0c93c906f3f35') in 0.004911 seconds
-  Import took 0.012360 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003417 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/GravityBody.cs
-  artifactKey: Guid(2986c8023dcd74f34b6e3160c86f7cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/GravityBody.cs using Guid(2986c8023dcd74f34b6e3160c86f7cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6059adb7e09384d35aa0c93c906f3f35') in 0.008241 seconds
-  Import took 0.017133 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.862560 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/Leaderboard.cs
-  artifactKey: Guid(94dba18b0d16c473289424d6f50fe34d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/Leaderboard.cs using Guid(94dba18b0d16c473289424d6f50fe34d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd83b2ce94b30eda58f095c40a33897bd') in 0.004342 seconds
-  Import took 0.009049 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001641 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/Leaderboard.cs
-  artifactKey: Guid(94dba18b0d16c473289424d6f50fe34d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/Leaderboard.cs using Guid(94dba18b0d16c473289424d6f50fe34d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd83b2ce94b30eda58f095c40a33897bd') in 0.006273 seconds
-  Import took 0.013304 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.236238 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerCoordinate.cs
-  artifactKey: Guid(2fcca73741fa6431ca8a972276385213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerCoordinate.cs using Guid(2fcca73741fa6431ca8a972276385213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1de87283918a394c11b9ce681fb4ff5c') in 0.004200 seconds
-  Import took 0.009138 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005133 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.87 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.132 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.68 ms.
-Unloading 1953 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 171.4 MB.
-System memory in use after: 171.5 MB.
-
-Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2454.
-Total: 2.833019 ms (FindLiveObjects: 0.390173 ms CreateObjectMapping: 0.087495 ms MarkObjects: 2.333947 ms  DeleteObjects: 0.020240 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 371.722967 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerMove.cs
-  artifactKey: Guid(b7c50d4de081c4ca7a2dd42c6f0b626d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerMove.cs using Guid(b7c50d4de081c4ca7a2dd42c6f0b626d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e127c37da7db9054aed7826c2c9f125d') in 0.018213 seconds
-  Import took 0.029574 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009301 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 5 plugins.
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.7f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.77 ms, found 5 plugins.
 Preloading 1 native plugins for Editor in 0.59 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.071 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.64 ms.
-Unloading 1953 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 171.7 MB.
-System memory in use after: 171.8 MB.
+Unloading 2013 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 168.1 MB.
+System memory in use after: 168.1 MB.
 
-Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2458.
-Total: 3.072734 ms (FindLiveObjects: 0.333064 ms CreateObjectMapping: 0.160270 ms MarkObjects: 1.886970 ms  DeleteObjects: 0.690634 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 244.331340 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerMove.cs
-  artifactKey: Guid(b7c50d4de081c4ca7a2dd42c6f0b626d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerMove.cs using Guid(b7c50d4de081c4ca7a2dd42c6f0b626d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a97bfb6ab924a75e613750a39a203a7c') in 0.007808 seconds
-  Import took 0.017635 seconds .
-
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 16.28 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.97 ms.
-Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.1 MB.
-System memory in use after: 138.1 MB.
-
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2458.
-Total: 8.292761 ms (FindLiveObjects: 0.522606 ms CreateObjectMapping: 0.070431 ms MarkObjects: 7.666106 ms  DeleteObjects: 0.031412 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006392 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 1.05 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.161 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.64 ms.
-Unloading 1953 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.2 MB.
-System memory in use after: 172.3 MB.
-
-Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2462.
-Total: 2.415807 ms (FindLiveObjects: 0.385702 ms CreateObjectMapping: 0.116622 ms MarkObjects: 1.890020 ms  DeleteObjects: 0.021484 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 916.538337 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/DiceController.cs
-  artifactKey: Guid(66d80c142539747d48266ad6d7488743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/DiceController.cs using Guid(66d80c142539747d48266ad6d7488743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59f72f521ed0dc6abdb2711ef0afd5fe') in 0.082753 seconds
-  Import took 0.119353 seconds .
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 2452.
+Total: 3.679080 ms (FindLiveObjects: 0.330541 ms CreateObjectMapping: 0.127823 ms MarkObjects: 3.057756 ms  DeleteObjects: 0.161078 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.897186 seconds.
-  path: Assets/Oculus/Spatializer/scenes/Standard Assets/Character Controllers/3rd Person Controller.prefab
-  artifactKey: Guid(2314ce3a3eecf4816bad3c9eca4de2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/Spatializer/scenes/Standard Assets/Character Controllers/3rd Person Controller.prefab using Guid(2314ce3a3eecf4816bad3c9eca4de2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10ea2f3577d04104ffb5742a0bec1937') in 1.243699 seconds
-  Import took 1.252722 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000369 seconds.
-  path: Assets/XR/XRGeneralSettings.asset
-  artifactKey: Guid(667383ba33c7f4255a34ae8d9d857eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/XR/XRGeneralSettings.asset using Guid(667383ba33c7f4255a34ae8d9d857eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b951ebb77e16f540fd947aaeb8fa01a3') in 1.037551 seconds
-  Import took 1.044851 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/Oculus/SampleFramework/Core/CustomHands/Models/r_hand_skeletal_lowres.fbx
-  artifactKey: Guid(d0c255d07fd68f14b94e55d388e7e6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Models/r_hand_skeletal_lowres.fbx using Guid(d0c255d07fd68f14b94e55d388e7e6bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30b6944f1fc39f49f0aea4b342b24e68') in 0.297570 seconds
-  Import took 0.304876 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/Oculus/VR/Prefabs/OVRHandPrefab.prefab
-  artifactKey: Guid(835e735ca71bf78459fb2cababd74112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Prefabs/OVRHandPrefab.prefab using Guid(835e735ca71bf78459fb2cababd74112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6be2bd6bb7cf40a3a307d62da939c33') in 0.010055 seconds
-  Import took 0.015231 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Oculus/Spatializer/scenes/sounds/360 Workstation Ambisonic Panning AmbiX.wav
-  artifactKey: Guid(1340d7fb0cd1bfb4caa3b3270cb2ea5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/Spatializer/scenes/sounds/360 Workstation Ambisonic Panning AmbiX.wav using Guid(1340d7fb0cd1bfb4caa3b3270cb2ea5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c8c87fc0bbe1afaaa2538c4b34588db') in 1.191483 seconds
-  Import took 1.196430 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/Oculus/VR/Scripts/Util/OVRHandTest.cs
-  artifactKey: Guid(12a1e4a79af8fe849b7a2769ff0d3886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Scripts/Util/OVRHandTest.cs using Guid(12a1e4a79af8fe849b7a2769ff0d3886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0963b3a65ced5eaf2ac0bf57bcb8e3d') in 0.002043 seconds
-  Import took 0.005785 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.226376 seconds.
-  path: Assets/Oculus/VR/Scripts/Util/OVRHand.cs
-  artifactKey: Guid(cb7623a8f0b49cf4dbaa40aea4d4be64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Scripts/Util/OVRHand.cs using Guid(cb7623a8f0b49cf4dbaa40aea4d4be64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88b075bf583e9689df39ea281ef5a6ca') in 0.002140 seconds
-  Import took 0.008386 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.569656 seconds.
-  path: Assets/Oculus/VR/Prefabs/OVRHandPrefab.prefab
-  artifactKey: Guid(835e735ca71bf78459fb2cababd74112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Prefabs/OVRHandPrefab.prefab using Guid(835e735ca71bf78459fb2cababd74112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1d2bbb8fb905612dd71a1ee8834a5e4') in 0.003835 seconds
-  Import took 0.008823 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000667 seconds.
-  path: Assets/Oculus/VR/Prefabs/OVRHandPrefab.prefab
-  artifactKey: Guid(835e735ca71bf78459fb2cababd74112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Prefabs/OVRHandPrefab.prefab using Guid(835e735ca71bf78459fb2cababd74112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1d2bbb8fb905612dd71a1ee8834a5e4') in 0.005300 seconds
-  Import took 0.009848 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 83.434206 seconds.
-  path: Assets/Planet Earth Free/Models/Planet960Tris.FBX
-  artifactKey: Guid(d918e1286969e1740b2daa8c7eb5bcac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Planet Earth Free/Models/Planet960Tris.FBX using Guid(d918e1286969e1740b2daa8c7eb5bcac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43f572c65f09ff240cf9664c1626de8f') in 0.196213 seconds
-  Import took 0.202983 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/Oculus/VR/Meshes/OculusTouchForQuest2/OculusTouchForQuest2_Right.fbx
-  artifactKey: Guid(25b5eb0761edb6346b0b3444af76b55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Meshes/OculusTouchForQuest2/OculusTouchForQuest2_Right.fbx using Guid(25b5eb0761edb6346b0b3444af76b55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '457abe3d29fbbbacfa917d0e993a286d') in 0.087980 seconds
-  Import took 0.092353 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/Oculus/SampleFramework/Core/TouchControllers/Animations/r_controller_neutral_trigger_pull_mask_anim.fbx
-  artifactKey: Guid(c57b76fcd87d3154cb02f7143c65b5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/TouchControllers/Animations/r_controller_neutral_trigger_pull_mask_anim.fbx using Guid(c57b76fcd87d3154cb02f7143c65b5cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2f98be41eec15f6a6e1f89642cdc603') in 0.008513 seconds
-  Import took 0.013207 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/Oculus/SampleFramework/Core/TouchControllers/Animations/r_controller_trigger_pull_anim.fbx
-  artifactKey: Guid(5faf591de3a357443b21365d82dff689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/TouchControllers/Animations/r_controller_trigger_pull_anim.fbx using Guid(5faf591de3a357443b21365d82dff689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4832489174d9aac3fb43f83e9b91b4bf') in 0.015860 seconds
-  Import took 0.021549 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Oculus/SampleFramework/Core/TouchControllers/Models/left_touch_controller_model_skel.fbx
-  artifactKey: Guid(1bf8f52eeebe8e149b9d6e3477251532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/TouchControllers/Models/left_touch_controller_model_skel.fbx using Guid(1bf8f52eeebe8e149b9d6e3477251532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c0ece9ef9772da3016ff9d792a8be85') in 0.082219 seconds
-  Import took 0.087201 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/Oculus/VR/Meshes/OculusTouchForQuest2/OculusTouchForQuest2_Left.fbx
-  artifactKey: Guid(8b83018900d13bb4f8e0ad895cb004e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Meshes/OculusTouchForQuest2/OculusTouchForQuest2_Left.fbx using Guid(8b83018900d13bb4f8e0ad895cb004e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8b2772172297d95f26f064172539719') in 0.047359 seconds
-  Import took 0.050953 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Oculus/VR/Meshes/OculusTouchForRift/left_touch_controller_model_skel.fbx
-  artifactKey: Guid(c3ba18e9fa5e9104098cbdbb3e23a5b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Meshes/OculusTouchForRift/left_touch_controller_model_skel.fbx using Guid(c3ba18e9fa5e9104098cbdbb3e23a5b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be16816f217b54fa8c9b6120f8bb7c30') in 0.214517 seconds
-  Import took 0.219966 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/Oculus/SampleFramework/Core/TouchControllers/Animations/r_controller_neutral_trigger_mask_anim.fbx
-  artifactKey: Guid(840f7f51c23e45444b5cbe0ee9e14998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/TouchControllers/Animations/r_controller_neutral_trigger_mask_anim.fbx using Guid(840f7f51c23e45444b5cbe0ee9e14998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cca4377793cfb0ff51d16fd8f6a3d9d1') in 0.008172 seconds
-  Import took 0.012471 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/Planet Earth Free/Models/Planet3968Tris.FBX
-  artifactKey: Guid(d103ffa837233534daa68d733386bac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Planet Earth Free/Models/Planet3968Tris.FBX using Guid(d103ffa837233534daa68d733386bac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df4919c51ddab06a7191e2f67a191d5d') in 0.025724 seconds
-  Import took 0.029565 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/Oculus/SampleFramework/Core/TouchControllers/Animations/l_controller_neutral_trigger_pull_mask_anim.fbx
-  artifactKey: Guid(6848f611ef9312e4aa10a28c22aee7cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/TouchControllers/Animations/l_controller_neutral_trigger_pull_mask_anim.fbx using Guid(6848f611ef9312e4aa10a28c22aee7cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3f9073b1295df6b20d1ff4de78a6cfb') in 0.026351 seconds
-  Import took 0.030250 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Oculus/SampleFramework/Core/CustomHands/Materials/Hands_striped.mat
-  artifactKey: Guid(2053692007a444b4298a3c679f98a1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Materials/Hands_striped.mat using Guid(2053692007a444b4298a3c679f98a1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd4ef2e38b23a63b9425cf9243fce7d') in 0.243799 seconds
-  Import took 0.248305 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/Planet Earth Free/Models/Planet3968Tris.FBX
-  artifactKey: Guid(d103ffa837233534daa68d733386bac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Planet Earth Free/Models/Planet3968Tris.FBX using Guid(d103ffa837233534daa68d733386bac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df4919c51ddab06a7191e2f67a191d5d') in 0.011660 seconds
-  Import took 0.014680 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Oculus/SampleFramework/Core/CustomHands/Textures/Hands_stripes_01.png
-  artifactKey: Guid(3eb12af43cd0000409a977bcf35e4d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Textures/Hands_stripes_01.png using Guid(3eb12af43cd0000409a977bcf35e4d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2661fe22f6c0e50c57955a9a0b4fe3fd') in 1.108013 seconds
-  Import took 1.114410 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/Oculus/SampleFramework/Core/TouchControllers/Models/right_touch_controller_model_skel.fbx
-  artifactKey: Guid(270ca9aaa39af4d4bb26754fdce0c971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/TouchControllers/Models/right_touch_controller_model_skel.fbx using Guid(270ca9aaa39af4d4bb26754fdce0c971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b26fa3be46daa2eb582807e27d5e84b') in 0.079118 seconds
-  Import took 0.083253 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Oculus/SampleFramework/Core/TouchControllers/Animations/l_controller_trigger_pull_anim.fbx
-  artifactKey: Guid(182278cefb47da243850fc09dc4cc209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/TouchControllers/Animations/l_controller_trigger_pull_anim.fbx using Guid(182278cefb47da243850fc09dc4cc209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6c61874900f74c8fe884855a0eaf088') in 0.008472 seconds
-  Import took 0.011756 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/Planet Earth Free/Models/Planet16128Tris.FBX
-  artifactKey: Guid(b82e0d2b8cc9ee64cacfa0b6e51ff1a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Planet Earth Free/Models/Planet16128Tris.FBX using Guid(b82e0d2b8cc9ee64cacfa0b6e51ff1a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d649828c67bef06460ff173fe0abeaf') in 0.027182 seconds
-  Import took 0.031470 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000521 seconds.
-  path: Assets/Oculus/VR/Meshes/OculusTouchForQuestAndRiftS/OculusTouchForQuestAndRiftS_Left.fbx
-  artifactKey: Guid(32fbc8bcebb64584da5868aeeb086cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Meshes/OculusTouchForQuestAndRiftS/OculusTouchForQuestAndRiftS_Left.fbx using Guid(32fbc8bcebb64584da5868aeeb086cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c98f441fcf8cbde692c255ba2158034') in 0.126056 seconds
-  Import took 0.130768 seconds .
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Mt.Fuji.fbx
+  artifactKey: Guid(4a087214ad68642eb9e4e2bffa80930d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Mt.Fuji.fbx using Guid(4a087214ad68642eb9e4e2bffa80930d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dd2fc55481992f3960853861efa1712') in 1.438620 seconds
+  Import took 1.447245 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000256 seconds.
-  path: Assets/Oculus/VR/Meshes/OculusTouchForQuestAndRiftS/OculusTouchForQuestAndRiftS_Right.fbx
-  artifactKey: Guid(37ba10a26a648144fa2390c8adfb2c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Meshes/OculusTouchForQuestAndRiftS/OculusTouchForQuestAndRiftS_Right.fbx using Guid(37ba10a26a648144fa2390c8adfb2c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd9d208b4b4b6e557594d3065ca8bd22') in 0.108720 seconds
-  Import took 0.113149 seconds .
+  path: Assets/Photon/PhotonUnityNetworking/Resources/pyramid.fbx
+  artifactKey: Guid(ecb0b48287c914a53ad4be6e13735196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/pyramid.fbx using Guid(ecb0b48287c914a53ad4be6e13735196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f76dd5860dc8106fe2e21034089c9018') in 0.014929 seconds
+  Import took 0.019213 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/Oculus/VR/Meshes/OculusTouchForRift/right_touch_controller_model_skel.fbx
-  artifactKey: Guid(c3798d66af7bbe54bbfe22a3b302300b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Meshes/OculusTouchForRift/right_touch_controller_model_skel.fbx using Guid(c3798d66af7bbe54bbfe22a3b302300b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dfd1b5ca23fc04ec19a93f3bc590925') in 0.079503 seconds
-  Import took 0.083270 seconds .
+  Time since last request: 0.000233 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/Arc_de_triomphe.fbx
+  artifactKey: Guid(47520303fb4e04bcd81efd08a5214da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/Arc_de_triomphe.fbx using Guid(47520303fb4e04bcd81efd08a5214da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af5b957588c813c4571171a97d76c64f') in 0.049364 seconds
+  Import took 0.053247 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.142589 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/EventTrigger.cs
-  artifactKey: Guid(a569e066944a441ed9416c14158459dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/EventTrigger.cs using Guid(a569e066944a441ed9416c14158459dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529e9d5a2b4ec7803b2ec96ca4409290') in 0.006341 seconds
-  Import took 0.011595 seconds .
+  Time since last request: 0.000244 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/skytree.fbx
+  artifactKey: Guid(a662d54f743a848af89d99b61cbc3f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/skytree.fbx using Guid(a662d54f743a848af89d99b61cbc3f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82e6fe02792418ee51c50604ab8f3b10') in 0.142061 seconds
+  Import took 0.148141 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.818498 seconds.
-  path: Assets/Oculus/SampleFramework/Core/DistanceGrab/Prefabs/DistanceGrabHandLeft.prefab
-  artifactKey: Guid(0242aa8515b4bc947a945a5c6df83ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/DistanceGrab/Prefabs/DistanceGrabHandLeft.prefab using Guid(0242aa8515b4bc947a945a5c6df83ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ab59565b9ab87eac20b796a6f6efcc') in 0.051053 seconds
-  Import took 0.056070 seconds .
+  Time since last request: 0.000367 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/coliseum.fbx
+  artifactKey: Guid(36e0e8975d0c444beac2c30c024ce15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/coliseum.fbx using Guid(36e0e8975d0c444beac2c30c024ce15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3deb216993aafc2711ea84820bb605b2') in 0.445355 seconds
+  Import took 0.450775 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Oculus/SampleFramework/Core/CustomHands/Models/HandPoseDefaultPf.prefab
-  artifactKey: Guid(35525acb4c3b75c4a8c4dc2c117427be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Models/HandPoseDefaultPf.prefab using Guid(35525acb4c3b75c4a8c4dc2c117427be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bced5005baa87047db897eab10d972c') in 0.006000 seconds
-  Import took 0.010213 seconds .
+  Time since last request: 98.071103 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/World Architecture
+  artifactKey: Guid(d5c05f2dd2ecf45228a94e0f0b001d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/World Architecture using Guid(d5c05f2dd2ecf45228a94e0f0b001d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf01f0f8a9957186224eed1bbc9f8010') in 0.002207 seconds
+  Import took 0.006750 seconds .
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/Oculus/SampleFramework/Core/CustomHands/Models/l_hand_skeletal_lowres.fbx
-  artifactKey: Guid(ca20b3907ff1c794cb89c1ad2cce8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Models/l_hand_skeletal_lowres.fbx using Guid(ca20b3907ff1c794cb89c1ad2cce8282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa3686329e0f3278b25b567773d4d90') in 0.043400 seconds
-  Import took 0.047566 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Assets/Oculus/SampleFramework/Core/HandsInteraction/Prefabs/HandsManager.prefab
-  artifactKey: Guid(cbdf09e3b0f1ac246914a74904002cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/HandsInteraction/Prefabs/HandsManager.prefab using Guid(cbdf09e3b0f1ac246914a74904002cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fa5786ae56a99a8f22e293784c99d44') in 0.008175 seconds
-  Import took 0.012747 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/Oculus/SampleFramework/Core/CustomHands/Materials/Hands_solid.mat
-  artifactKey: Guid(3637b758ff163493f8bb8b6d7e96d7ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Materials/Hands_solid.mat using Guid(3637b758ff163493f8bb8b6d7e96d7ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '594eea25d911e70e4d3b7dfd9298830b') in 0.030846 seconds
-  Import took 0.035387 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000484 seconds.
-  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/HandsNotificationMaterial.mat
-  artifactKey: Guid(497f7cc045d01f1479c242f0b883e8f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/HandsNotificationMaterial.mat using Guid(497f7cc045d01f1479c242f0b883e8f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '411ac032d2ad7be1244528d818a2b00b') in 0.055378 seconds
-  Import took 0.063146 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/Oculus/SampleFramework/Core/CustomHands/Materials/Hands_transparent.mat
-  artifactKey: Guid(944feb076639a4d39b750e3cb5d7dfab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Materials/Hands_transparent.mat using Guid(944feb076639a4d39b750e3cb5d7dfab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c709b5e4b41991f4d82886b834ee2fa') in 0.195159 seconds
-  Import took 0.199056 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000270 seconds.
-  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Prefabs/HandsNotification.prefab
-  artifactKey: Guid(e4f60a75af8a64d46b6a5eb6ddd9fb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Prefabs/HandsNotification.prefab using Guid(e4f60a75af8a64d46b6a5eb6ddd9fb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b84a3c304223e12ac3a67d5da21329cf') in 0.012221 seconds
-  Import took 0.015410 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Oculus/SampleFramework/Core/DistanceGrab/Prefabs/DistanceGrabHandRight.prefab
-  artifactKey: Guid(6fae51a9f4170334e8639e8dbfc0a54b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/DistanceGrab/Prefabs/DistanceGrabHandRight.prefab using Guid(6fae51a9f4170334e8639e8dbfc0a54b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35bb040ae906adce735c497f9d52df57') in 0.036911 seconds
-  Import took 0.045775 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Oculus/SampleFramework/Core/CustomHands/Animations/l_hand_cap_touch_anim.fbx
-  artifactKey: Guid(16a87db82a90e2b40986857ee65aea51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Animations/l_hand_cap_touch_anim.fbx using Guid(16a87db82a90e2b40986857ee65aea51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8af9e3967df9074170ee4507cd76ce77') in 0.018882 seconds
-  Import took 0.022820 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/Oculus/SampleFramework/Core/CustomHands/Models/HandMaterial.mat
-  artifactKey: Guid(cc8c9e8a516866042b69a6919d0ab885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Models/HandMaterial.mat using Guid(cc8c9e8a516866042b69a6919d0ab885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '053c05a0e5e132fdcb208d5f6fac43f8') in 0.012740 seconds
-  Import took 0.016657 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/Oculus/VR/Textures/HandTracking/HandTracking_uvmap_2048.png
-  artifactKey: Guid(c00bf1ce0c68d5646ad7ea3d26b3486d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Textures/HandTracking/HandTracking_uvmap_2048.png using Guid(c00bf1ce0c68d5646ad7ea3d26b3486d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8af191014b09f8d89cb1f6ab67b5ecda') in 0.054913 seconds
-  Import took 0.058036 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/Oculus/SampleFramework/Core/CustomHands/Animations/l_hand_cap_touch_index_mask_anim.fbx
-  artifactKey: Guid(8f30ac6cbbbe39d43886ad7626f7e2b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/CustomHands/Animations/l_hand_cap_touch_index_mask_anim.fbx using Guid(8f30ac6cbbbe39d43886ad7626f7e2b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e85615689c757dda7f17da1d741106') in 0.007471 seconds
-  Import took 0.011104 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 22.120443 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerMove.cs
-  artifactKey: Guid(b7c50d4de081c4ca7a2dd42c6f0b626d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerMove.cs using Guid(b7c50d4de081c4ca7a2dd42c6f0b626d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acccbfaf0a31bdde3c638e4c7bb734e7') in 0.004687 seconds
-  Import took 0.010050 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 50.084860 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
-  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9559cb70a1adc5b3eeb459f4aa995b1') in 0.091894 seconds
-  Import took 0.098696 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026902 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
-  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9559cb70a1adc5b3eeb459f4aa995b1') in 0.033014 seconds
-  Import took 0.038246 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.034624 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
-  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9559cb70a1adc5b3eeb459f4aa995b1') in 0.055645 seconds
-  Import took 0.062379 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.554656 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
-  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7bb6b85288417aa18c3d6036d16a1e6') in 0.054704 seconds
-  Import took 0.064276 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.727050 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/FirstPersonController.cs
-  artifactKey: Guid(af2851e4dd3374c83b8d137bfaac81d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/FirstPersonController.cs using Guid(af2851e4dd3374c83b8d137bfaac81d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd423003592ce2a3971ce6e117c04d5b3') in 0.007976 seconds
-  Import took 0.013769 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 410.704395 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/TimeManager.cs
-  artifactKey: Guid(1ca28202bf34544cf815c1fbfa10b7d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/TimeManager.cs using Guid(1ca28202bf34544cf815c1fbfa10b7d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3727ff72a1583b3917968f98eeb9ed44') in 0.043678 seconds
-  Import took 0.106038 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007745 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.92 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.199 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 1.13 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.99 ms.
-Unloading 1953 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 207.7 MB.
-System memory in use after: 207.8 MB.
-
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2515.
-Total: 4.382958 ms (FindLiveObjects: 0.559926 ms CreateObjectMapping: 0.171702 ms MarkObjects: 3.610155 ms  DeleteObjects: 0.038885 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 61.871073 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/TimeManager.cs
-  artifactKey: Guid(1ca28202bf34544cf815c1fbfa10b7d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/TimeManager.cs using Guid(1ca28202bf34544cf815c1fbfa10b7d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd36b9731509da008ea364c454e4922a3') in 0.009762 seconds
-  Import took 0.017159 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007555 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.07 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.64 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.168 seconds
-Platform modules already initialized, skipping
-Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(589824) extendedPlatform(0)
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.67 ms.
-Unloading 1953 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 208.0 MB.
-System memory in use after: 208.1 MB.
-
-Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2519.
-Total: 2.427173 ms (FindLiveObjects: 0.362901 ms CreateObjectMapping: 0.079750 ms MarkObjects: 1.961980 ms  DeleteObjects: 0.021332 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 16.67 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.59 ms.
-Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 174.5 MB.
-System memory in use after: 174.6 MB.
-
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2519.
-Total: 3.238000 ms (FindLiveObjects: 0.275417 ms CreateObjectMapping: 0.089230 ms MarkObjects: 2.837552 ms  DeleteObjects: 0.034331 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 732.455186 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerManager.cs
-  artifactKey: Guid(1e9864be0eda144dbbcb9eba531bf906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerManager.cs using Guid(1e9864be0eda144dbbcb9eba531bf906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d89ad097220d6277fb3c5e5e1e9486e') in 0.030326 seconds
-  Import took 0.060345 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.574805 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonUnityNetworking.Utilities.asmdef
-  artifactKey: Guid(a738238285a7a8246af046cbf977522f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonUnityNetworking.Utilities.asmdef using Guid(a738238285a7a8246af046cbf977522f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1de0dc27d3139c7e03c253f7eabb945') in 0.193007 seconds
-  Import took 0.200673 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.905195 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Code/PhotonUnityNetworking.asmdef
-  artifactKey: Guid(57c32fc907df0f54e8e6e8f0d2488336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Code/PhotonUnityNetworking.asmdef using Guid(57c32fc907df0f54e8e6e8f0d2488336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67df24708c4bdcfdf8f3b313ecdf945') in 0.003103 seconds
-  Import took 0.011666 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.896348 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
-  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c492dc67ded8e771907ced566d220b0') in 0.246336 seconds
-  Import took 0.255477 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.292842 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
-  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c492dc67ded8e771907ced566d220b0') in 0.041941 seconds
-  Import took 0.049127 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.084642 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
-  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ec303c2a415ebedd957df2a668be50b') in 0.041457 seconds
-  Import took 0.050138 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.960191 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
-  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0adc04fc3748949df2ba9780dfde092') in 0.038129 seconds
-  Import took 0.045188 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.330954 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
-  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c65518e186bb82c4fc4e2fb654f4b136') in 0.044941 seconds
-  Import took 0.053174 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.272219 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab
-  artifactKey: Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Resources/Player.prefab using Guid(fb9ea7b6278fc443187526538994bb1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d9c5d5350365f0570a2e26852cbf171') in 0.040181 seconds
-  Import took 0.048196 seconds .
-
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

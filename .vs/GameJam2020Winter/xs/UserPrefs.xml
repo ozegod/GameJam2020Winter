@@ -1,12 +1,16 @@
 ﻿<Properties StartupConfiguration="{8FC2A022-14F0-C3C0-455B-6CF8272569AC}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerMove.cs">
     <Files>
-      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerManager.cs" Line="32" Column="20" />
+      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerMove.cs" Line="65" Column="17" />
+      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/GameConnect.cs" Line="12" Column="22" />
+      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/PlayerManager.cs" />
+      <File FileName="Assets/Photon/PhotonUnityNetworking/Resources/Script/TimeManager.cs" />
+      <File FileName="Assets/Oculus/VR/Scripts/OVRPlugin.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a6e422d9-0101-445f-86c6-740aa2b82f02" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2f875e32-8aa1-431a-8c5c-0e28a3b2c205" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

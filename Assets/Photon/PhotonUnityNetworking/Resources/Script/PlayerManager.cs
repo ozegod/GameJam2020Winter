@@ -10,8 +10,6 @@ public class PlayerManager : MonoBehaviourPunCallbacks, IPunObservable
 {
     //頭上のUIのPrefab
     public GameObject PlayerUiPrefab;
-    public GameObject mainCamera;
-    public GameObject UICamera;
 
     //現在のmoney
     public int money = 0;
@@ -29,7 +27,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks, IPunObservable
     }
     #endregion
 
-    #region 頭上UIの生成
+    #region UIの生成
     void Start()
     {
         PlayerUiPrefab.GetComponent<PlayerUIScript>().SetTarget(this);
@@ -45,13 +43,13 @@ public class PlayerManager : MonoBehaviourPunCallbacks, IPunObservable
         //CLocalVariablesを参照し、現在のHPを更新
         money = GamePlayerProperty.GetMoney(LocalPlayerInstance);
 
+        if (OVRInput.GetDown(OVRInput.Button.One))
+        {
+            PlayerUiPrefab.SetActive(true);
+        }
         if (OVRInput.GetDown(OVRInput.Button.Two))
         {
-            UICamera.SetActive(true);
-        }
-        else
-        {
-            UICamera.SetActive(false);
+            PlayerUiPrefab.SetActive(false);
         }
     }
 

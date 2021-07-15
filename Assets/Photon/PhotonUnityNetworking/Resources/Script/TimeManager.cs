@@ -19,7 +19,7 @@ public class TimeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         if (OVRInput.GetDown(OVRInput.Button.One))
+         if (OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger))
         {
             TimerStart = true;
         }

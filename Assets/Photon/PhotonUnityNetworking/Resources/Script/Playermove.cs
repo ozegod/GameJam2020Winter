@@ -18,7 +18,6 @@ public class PlayerMove : MonoBehaviour
     float cameraSensitivityX;
     float walkSpeed;
     public GameObject cameraT;
-    float verticalLookRotation;
     Vector3 moveAmount;
     Vector3 smoothMoveVelocity;
 
@@ -53,13 +52,24 @@ public class PlayerMove : MonoBehaviour
 
         //緯度(latitude)に値するもの（南半球の場合-0度から-90度まで）、longitudeは-180から180まで
         latitude = Mathf.Rad2Deg * Mathf.Atan(Car_Y / Mathf.Sqrt(Mathf.Pow(Car_X, 2) + Mathf.Pow(Car_Z, 2)));
-        if (Car_Z == 0)
+        if (Car_X == 0)
         {
-            longitude = 0;
+            longitude = 90 * Math.Abs(Car_Z) / Car_Z;            
+        }
+        else if (Car_X < 0)
+        {
+            if (Car_Z == 0)
+            {
+                longitude = 180;
+            }
+            else
+            {
+                longitude = 180 * Math.Abs(Car_Z) / Car_Z + Mathf.Rad2Deg * Mathf.Atan(Car_Z / Car_X);
+            }
         }
         else
         {
-            longitude = Mathf.Rad2Deg * Mathf.Atan(Car_X / Car_Z);
+            longitude = Mathf.Rad2Deg * Mathf.Atan(Car_Z / Car_X);
         }
 
         #endregion
@@ -67,49 +77,10 @@ public class PlayerMove : MonoBehaviour
         int D = int.Parse(Dice.GetComponent<Text>().text);
         Text.text = latitude.ToString() + " : " + longitude.ToString() + " : " + Moving.ToString() + " : " + D.ToString() + " : " + a.ToString();
 
-        if (((D == 0) || a % 3 == 1) && OVRInput.GetDown(OVRInput.Button.One))
-        {
-            step = 0;
-            a = DiceController.GetComponent<DiceController>().a += 1;
-            DiceController.GetComponent<DiceController>().DiceRoll();
-            latitude0 = latitude;
-            longitude0 = longitude;
-        }
-
-        if (a % 3 == 2)
-        {
-            if (D > 0)
-            {
-                if ((latitude == latitude0) && (longitude == longitude0))
-                {
-                    max_step = D;
-                }
-                Moving = true;
-            }
-            else
-            {
-                Moving = false;
-                rigid.velocity = Vector3.zero;
-                rigid.angularVelocity = Vector3.zero;
-                rigid.isKinematic = true;
-                DiceController.GetComponent<DiceController>().a = a + 1;
-            }
-        }
-
-        if (Moving)
-        {
-            Vector3 moveDir = new Vector3(OVRInput.Get(OVRInput.RawAxis2D.RThumbstick).x, 0, OVRInput.Get(OVRInput.RawAxis2D.RThumbstick).y).normalized;
-            Vector3 targetMoveAmount = moveDir * walkSpeed;
-            moveAmount = Vector3.SmoothDamp(moveAmount, targetMoveAmount, ref smoothMoveVelocity, .15f);
-            rigid.isKinematic = false;
-
-            float la = Math.Abs(latitude0 - latitude);
-            float lo = Math.Abs(longitude0 - longitude);
-
-            step = (int)(Math.Min(la, 360f - la) / 10f + Math.Min(lo, 360f - lo) / 10f);
-            Dice.GetComponent<Text>().text = (max_step - step).ToString();
-        }
-
+        Vector3 moveDir = new Vector3(OVRInput.Get(OVRInput.RawAxis2D.RThumbstick).x, 0, OVRInput.Get(OVRInput.RawAxis2D.RThumbstick).y).normalized;
+        Vector3 targetMoveAmount = moveDir * walkSpeed;
+        moveAmount = Vector3.SmoothDamp(moveAmount, targetMoveAmount, ref smoothMoveVelocity, .15f);
+        rigid.isKinematic = false;
     }
 
     void FixedUpdate()
@@ -117,8 +88,12 @@ public class PlayerMove : MonoBehaviour
         GetComponent<Rigidbody>().MovePosition(GetComponent<Rigidbody>().position + transform.TransformDirection(moveAmount) * Time.fixedDeltaTime);
     }
 
-    //OculusQuestにおけるボタンやキー入力のコードのメモ
-    //(OVRInput.GetDown(OVRInput.RawButton.LThumbstickRight) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickRight) || OVRInput.GetDown(OVRInput.RawButton.LThumbstickLeft) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickLeft) || OVRInput.GetDown(OVRInput.RawButton.LThumbstickUp) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickUp) || OVRInput.GetDown(OVRInput.RawButton.LThumbstickDown) || OVRInput.GetDown(OVRInput.RawButton.RThumbstickDown))
-
+    void MoveStop()
+    {
+        Moving = false;
+        rigid.velocity = Vector3.zero;
+        rigid.angularVelocity = Vector3.zero;
+        rigid.isKinematic = true;
+    }
 }
 
